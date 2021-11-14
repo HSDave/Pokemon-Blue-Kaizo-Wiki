@@ -1,0 +1,197 @@
+img.pkmnimg {
+	width: 220px;
+	height: 220px;
+}
+
+.pull-left{
+	float: left;
+	margin: 10px;
+}
+
+.clearfix{
+	clear: both;
+}
+
+button.header {
+	font-size: large;
+}
+
+button.next {
+	font-size: large;
+	margin-bottom: 5px;
+	margin-right: 10px;
+}
+
+button.phantom {
+	font-size: large;
+	color: white;
+	background: transparent;
+	border: none;
+	margin-bottom: 5px;
+	margin-right: 10px;
+}
+
+table.typetbl{
+	border-collapse: collapse;
+	border: 1px solid black;
+	border-style: hidden;
+	padding: 2px;
+}
+
+table.encountertbl{
+	border-collapse: collapse;
+	border: 1px solid black;
+	border-style: hidden;
+	padding: 2px;
+}
+
+table.encountertbl caption{
+	background-color: #12e6d9;
+	font-weight: bold;
+	font-size: x-large;
+}
+
+table.stattbl{
+	border-collapse: collapse;
+	border: 1px solid black;
+	border-style: hidden;
+	padding: 2px;
+}
+
+table.stattbl caption{
+	background-color: lightgreen;
+	font-weight: bold;
+	font-size: x-large;
+}
+
+table.movetbl{
+	border-collapse: collapse;
+	border: 1px solid black;
+	border-style: hidden;
+	padding: 2px;
+	float: left;
+	margin-right: 10px;
+}
+
+table.movetbl caption{
+	background-color: #ff8085;
+	font-weight: bold;
+	font-size: x-large;
+}
+
+table.movetbl th, table.encountertbl th,table.stattbl th{
+	background-color: #f0f0f1;
+	padding: 8px;
+	text-align: left;
+	font-size: large;
+}
+
+table.movetbl td, table.encountertbl td, table.stattbl td{
+	background-color: #dcdcde;
+	text-align: left;
+	padding: 4px;
+}
+
+table.pkmntbl{
+	border-collapse: collapse;
+	border-radius: 6px;
+	border: 2px solid red;
+	padding: 2px;
+}
+
+table.pkmntbl caption{
+	font-weight: bold;
+	font-size: x-large;
+}
+
+table.pkmntbl th{
+	background-color: #f0f0f1;
+	padding: 8px;
+	text-align: left;
+	font-size: large;
+	border: 1px solid red;
+	border-collapse: collapse;
+}
+
+table.pkmntbl td{
+	padding: 3px;
+	text-align: left;
+	font-size: large;
+	border: 1px solid red;
+	border-collapse: collapse;
+}
+
+table.pkmntbl td.grass, table.movetbl td.grass, table.typetbl td.grass{
+	background-color: green;
+	color: white;
+}
+
+table.pkmntbl td.poison, table.movetbl td.poison, table.typetbl td.poison{
+	background-color: mediumorchid;
+	color: white;
+}
+
+table.pkmntbl td.fire, table.movetbl td.fire, table.typetbl td.fire{
+	background-color: red;
+	color: white;
+}
+
+table.pkmntbl td.flying, table.movetbl td.flying, table.typetbl td.flying{
+	background-color: deepskyblue;
+	color: white;
+}
+
+table.pkmntbl td.water, table.movetbl td.water, table.typetbl td.water{
+	background-color: blue;
+	color: white;
+}
+
+table.pkmntbl td.normal, table.movetbl td.normal, table.typetbl td.normal{
+	background-color: #a9a599;
+	color: white;
+}
+
+table.pkmntbl td.bug, table.movetbl td.bug, table.typetbl td.bug{
+	background-color: yellowgreen;
+	color: white;
+}
+
+table.pkmntbl td.electric, table.movetbl td.electric, table.typetbl td.electric{
+	background-color: gold;
+	color: white;
+}
+
+table.pkmntbl td.ground, table.movetbl td.ground, table.typetbl td.ground{
+	background-color: goldenrod;
+	color: white;
+}
+
+table.pkmntbl td.rock, table.movetbl td.rock, table.typetbl td.rock{
+	background-color: #bfa964;
+	color: white;
+}
+
+table.pkmntbl td.psychic, table.movetbl td.psychic, table.typetbl td.psychic{
+	background-color: deeppink;
+	color: white;
+}
+
+table.pkmntbl td.fighting, table.movetbl td.fighting, table.typetbl td.fighting{
+	background-color: firebrick;
+	color: white;
+}
+
+table.pkmntbl td.dragon, table.movetbl td.dragon, table.typetbl td.dragon{
+	background-color: darkblue;
+	color: white;
+}
+
+table.pkmntbl td.ice, table.movetbl td.ice, table.typetbl td.ice{
+	background-color: lightblue;
+	color: white;
+}
+
+table.pkmntbl td.ghost, table.movetbl td.ghost, table.typetbl td.ghost{
+	background-color: purple;
+	color: white;
+}
