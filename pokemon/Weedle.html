@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Weedle</title>
+</head>
+<body>
+	<style>
+		@import url("../css/style.css");
+	</style>
+	<div class="top">
+		<button class="header" onclick="window.location.href = '../Index.html';" title="home">Home</button>
+		<button class="header" onclick="window.location.href = 'PokemonIndex.html';" title="Pokemon List">Pokemon List</button>
+		<button class="header" onclick="window.location.href = '../attacks/AttackIndex.html';" title="Attack List">Attack List</button>
+		<button class="header" onclick="window.location.href = '../items/Item List.html';" title="Item List">Item List</button>
+		<button class="header" onclick="window.location.href = '../walkthrough/Walkthrough.html';" title="Walkthrough">Walkthrough</button>
+	</div>
+	<hr></hr>
+	<h2>Weedle</h2>
+	<button class="next" onclick="window.location.href = 'Butterfree.html';" title="Butterfree">Previous</button>
+	<button class="next" onclick="window.location.href = 'Kakuna.html';" title="Kakuna">Next</button>
+	<table class="typetbl">
+		<tr>
+			<td>Type: </td>
+			<td class="bug">Bug</td>
+			<td class="poison">Poison</td>
+		</tr>
+	</table>
+	<div class = "pull-left">
+		<a href="../images/Weedle.jpg" target="_blank" title="Weedle.jpg">
+			<img src="../images/Weedle.jpg" class="pkmnimg" alt="Weedle"></img>
+		</a>
+		<div class="clearfix"></div>
+		<table class="stattbl">
+			<caption>Base Stats</caption>
+			<tr>
+				<th>Att</th>
+				<th>Hp</th>
+				<th>Def</th>
+				<th>Spd</th>
+				<th>Spc</th>
+			</tr>
+			<tr>
+				<td>40</td>
+				<td>35</td>
+				<td>30</td>
+				<td>50</td>
+				<td>20</td>
+			</tr>
+		</table>
+		<p>Evolves at lvl 7 to <a href="Kakuna.html" title="Kakuna">Kakuna</a></p>
+	</div>
+	<table class="movetbl">
+		<caption>Learnset</caption>
+		<tr>
+			<th>Lvl</th>
+			<th>Attack</th>
+			<th>Type</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td><a href="../attacks/Poison Sting.html" title="Poison Sting">Poison Sting</a></td>
+			<td class="poison">Poison</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td><a href="../attacks/String Shot.html" title="String Shot">String Shot</a></td>
+			<td class="bug">Bug</td>
+		</tr>
+	</table>
+	<table class="encountertbl">
+		<caption>Encounter</caption>
+		<tr>
+			<th>Place</th>
+			<th>Level</th>
+			<th>Rate [%]</th>
+			<th>Note</th>
+		</tr>
+		<tr>
+			<td><a href="../walkthrough/Route 1.html" title="Route 1">Route 1</a></td>
+			<td>3</td>
+			<td>15</td>
+			<td>Land</td>
+		</tr>
+	</table>
+</body>
+</html>
