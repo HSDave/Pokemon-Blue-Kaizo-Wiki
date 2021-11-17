@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Metapod</title>
+</head>
+<body>
+	<style>
+		@import url("../css/style.css");
+	</style>
+	<div class="top">
+		<button class="header" onclick="window.location.href = '../Index.html';" title="home">Home</button>
+		<button class="header" onclick="window.location.href = 'PokemonIndex.html';" title="Pokemon List">Pokemon List</button>
+		<button class="header" onclick="window.location.href = '../attacks/AttackIndex.html';" title="Attack List">Attack List</button>
+		<button class="header" onclick="window.location.href = '../items/Item List.html';" title="Item List">Item List</button>
+		<button class="header" onclick="window.location.href = '../walkthrough/Walkthrough.html';" title="Walkthrough">Walkthrough</button>
+	</div>
+	<hr></hr>
+	<h2>Metapod</h2>
+	<button class="next" onclick="window.location.href = 'Blastoise.html';" title="Blastoise">Previous</button>
+	<button class="next" onclick="window.location.href = 'Butterfree.html';" title="Butterfree">Next</button>
+	<table class="typetbl">
+		<tr>
+			<td>Type: </td>
+			<td class="bug">Bug</td>
+		</tr>
+	</table>
+	<div class = "pull-left">
+		<a href="../images/Metapod.jpg" target="_blank" title="Metapod.jpg">
+			<img src="../images/Metapod.jpg" class="pkmnimg" alt="Metapod"></img>
+		</a>
+		<div class="clearfix"></div>
+		<table class="stattbl">
+			<caption>Base Stats</caption>
+			<tr>
+				<th>Att</th>
+				<th>Hp</th>
+				<th>Def</th>
+				<th>Spd</th>
+				<th>Spc</th>
+			</tr>
+			<tr>
+				<td>50</td>
+				<td>20</td>
+				<td>55</td>
+				<td>30</td>
+				<td>25</td>
+			</tr>
+		</table>
+		<p>Evolves at lvl 7 from <a href="Caterpie.html" title="Caterpie">Caterpie</a></br>
+		Evolves at lvl 10 to <a href="Butterfree.html" title="Butterfree">Butterfree</a></p>
+	</div>
+	<table class="movetbl">
+		<caption>Learnset</caption>
+		<tr>
+			<th>Lvl</th>
+			<th>Attack</th>
+			<th>Type</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td><a href="../attacks/Harden.html" title="Harden">Harden</a></td>
+			<td class="normal">Normal</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td><a href="../attacks/Tackle.html" title="Tackle">Tackle</a></td>
+			<td class="normal">Normal</td>
+		</tr>
+	</table>
+	<table class="encountertbl">
+		<caption>Encounter</caption>
+		<tr>
+			<th>Place</th>
+			<th>Level</th>
+			<th>Rate [%]</th>
+			<th>Note</th>
+		</tr>
+		<tr>
+			<td><a href="../walkthrough/Viridian Forest.html" title="Viridian Forest">Viridian Forest</a></td>
+			<td>5</td>
+			<td>15</td>
+			<td>Land</td>
+		</tr>
+	</table>
+</body>
+</html>
