@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="../javaScript/functions.js"></script>
+    <title>Beedrill</title>
+</head>
+<body>
+	<style>
+		@import url("../css/style.css");
+	</style>
+	<script>document.write(generateHeader('../'));</script>
+	<h2>Beedrill</h2>
+	<script>
+		document.write(generateButton('Kakuna','Previous','../pokemon/'));
+		document.write(generateButton('Pidgey','Next','../pokemon/'));
+	</script>
+	<table class="typetbl">
+		<tr>
+			<td>Type: </td>
+			<script>document.write(generateType('Bug'));</script>
+			<script>document.write(generateType('Poison'));</script>
+		</tr>
+	</table>
+	<div class = "pull-left">
+		<a href="../images/Beedrill.jpg" target="_blank" title="Beedrill.jpg">
+			<img src="../images/Beedrill.jpg" class="pkmnimg" alt="Beedrill"></img>
+		</a>
+		<div class="clearfix"></div>
+		<script>document.write(generateBaseStatTable('Beedrill'));</script>
+		<p>Evolves at lvl 10 from <script>document.write(generateLink('Kakuna','../pokemon/'));</script></p>
+	</div>
+	<table class="movetbl">
+		<caption>Learnset</caption>
+		<tr>
+			<th>Lvl</th>
+			<th>Attack</th>
+			<th>Type</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td><script>document.write(generateLink('Twineedle','../attacks/'));</script></td>
+			<script>document.write(generateType('Bug'));</script>
+		</tr>
+		<tr>
+			<td>12</td>
+			<td><script>document.write(generateLink('Twineedle','../attacks/'));</script></td>
+			<script>document.write(generateType('Bug'));</script>
+		</tr>
+		<tr>
+			<td>16</td>
+			<td><script>document.write(generateLink('Twineedle','../attacks/'));</script></td>
+			<script>document.write(generateType('Bug'));</script>
+		</tr>
+		<tr>
+			<td>20</td>
+			<td><script>document.write(generateLink('Twineedle','../attacks/'));</script></td>
+			<script>document.write(generateType('Bug'));</script>
+		</tr>
+		<tr>
+			<td>25</td>
+			<td><script>document.write(generateLink('Twineedle','../attacks/'));</script></td>
+			<script>document.write(generateType('Bug'));</script>
+		</tr>
+		<tr>
+			<td>30</td>
+			<td><script>document.write(generateLink('Pin Missile','../attacks/'));</script></td>
+			<script>document.write(generateType('Bug'));</script>
+		</tr>
+		<tr>
+			<td>35</td>
+			<td><script>document.write(generateLink('Twineedle','../attacks/'));</script></td>
+			<script>document.write(generateType('Bug'));</script>
+		</tr>
+	</table>
+	<table class="encountertbl">
+		<caption>Encounter</caption>
+		<tr>
+			<th>Place</th>
+			<th>Level</th>
+			<th>Rate [%]</th>
+			<th>Note</th>
+		</tr>
+		<tr>
+			<td><script>document.write(generateLink('Route 6','../walkthrough/'));</script></td>
+			<td>23</td>
+			<td>10</td>
+			<td>Land</td>
+		</tr>
+		<tr>
+			<td><script>document.write(generateLink('Route 9','../walkthrough/'));</script></td>
+			<td>30</td>
+			<td>15</td>
+			<td>Land</td>
+		</tr>
+		<tr>
+			<td><script>document.write(generateLink('Route 25','../walkthrough/'));</script></td>
+			<td>20</td>
+			<td>15</td>
+			<td>Land</td>
+		</tr>
+	</table>
+</body>
+</html>
