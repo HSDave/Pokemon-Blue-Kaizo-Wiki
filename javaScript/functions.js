@@ -163,17 +163,17 @@ function generateType(type)
 	return '<td class="'+type.toLowerCase()+'">'+type+'</td>';
 }
 
-function generateLink(pokemon, path='')
+function generateLink(pokemon, path = '', content = pokemon)
 {
-	return '<a href="' + path + pokemon + '.html" title="' + pokemon + '">' + pokemon + '</a>';
+	return '<a href="' + path + pokemon + '.html" title="' + pokemon + '">' + content + '</a>';
 }
 
-function generateButton(pokemon, direction, path='')
+function generateButton(pokemon, direction, path = '')
 {
 	return '<button class="next" onclick="window.location.href = &quot;'+path+pokemon+'.html&quot;;" title="'+pokemon+'">'+direction+'</button> ';
 }
 
-function generateHeader(path='')
+function generateHeader(path = '')
 {
 	var header = '<div class="top">';
 	header += '<button class="header" onclick="window.location.href = &quot;'+path+'Index.html&quot;;" title="home">Home</button> ';
