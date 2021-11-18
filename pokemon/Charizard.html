@@ -1,28 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Charizard</title>
+    <script src="../javaScript/functions.js"></script>
+	<title>Charizard</title>
 </head>
 <body>
 	<style>
 		@import url("../css/style.css");
 	</style>
-	<div class="top">
-		<button class="header" onclick="window.location.href = '../Index.html';" title="home">Home</button>
-		<button class="header" onclick="window.location.href = 'PokemonIndex.html';" title="Pokemon List">Pokemon List</button>
-		<button class="header" onclick="window.location.href = '../attacks/AttackIndex.html';" title="Attack List">Attack List</button>
-		<button class="header" onclick="window.location.href = '../items/Item List.html';" title="Item List">Item List</button>
-		<button class="header" onclick="window.location.href = '../walkthrough/Walkthrough.html';" title="Walkthrough">Walkthrough</button>
-	</div>
-	<hr></hr>
+	<script>document.write(generateHeader('../'));</script>
 	<h2>Charizard</h2>
-	<button class="next" onclick="window.location.href = 'Charmeleon.html';" title="Charmeleon">Previous</button>
-	<button class="next" onclick="window.location.href = 'Squirtle.html';" title="Squirtle">Next</button>
+	<script>document.write(generateButton('Charmeleon','Previous','../pokemon/'));</script>
+	<script>document.write(generateButton('Squirtle','Next','../pokemon/'));</script>
 	<table class="typetbl">
 		<tr>
 			<td>Type: </td>
-			<td class="fire">Fire</td>
-			<td class="flying">Flying</td>
+			<script>document.write(generateType('Fire'));</script>
+			<script>document.write(generateType('Flying'));</script>
 		</tr>
 	</table>
 	<div class = "pull-left">
@@ -30,24 +24,8 @@
 			<img src="../images/Charizard.jpg" class="pkmnimg" alt="Charizard"></img>
 		</a>
 		<div class="clearfix"></div>
-		<table class="stattbl">
-			<caption>Base Stats</caption>
-			<tr>
-				<th>Att</th>
-				<th>Hp</th>
-				<th>Def</th>
-				<th>Spd</th>
-				<th>Spc</th>
-			</tr>
-			<tr>
-				<td>78</td>
-				<td>84</td>
-				<td>78</td>
-				<td>100</td>
-				<td>85</td>
-			</tr>
-		</table>
-		<p>Evolves at lvl 36 from </br><a href="Charmeleon.html" title="Charmeleon">Charmeleon</a></p>
+		<script>document.write(generateBaseStatTable('Charizard'));</script>
+		<p>Evolves at lvl 36 from </br><script>document.write(generateLink('Charmeleon','../pokemon/'));</script></p>
 	</div>
 	<table class="movetbl">
 		<caption>Learnset</caption>
@@ -58,53 +36,53 @@
 		</tr>
 		<tr>
 			<td>1</td>
-			<td><a href="../attacks/Flamethrower.html" title="Flamethrower">Flamethrower</a></td>
-			<td class="fire">Fire</td>
+			<td><script>document.write(generateLink('Flamethrower','../attacks/'));</script></td>
+			<script>document.write(generateType('Fire'));</script>
 		</tr>
 		<tr>
 			<td>1</td>
-			<td><a href="../attacks/Slash.html" title="Slash">Slash</a></td>
-			<td class="normal">Normal</td>
+			<td><script>document.write(generateLink('Slash','../attacks/'));</script></td>
+			<script>document.write(generateType('Normal'));</script>
 		</tr>
 		<tr>
 			<td>1</td>
-			<td><a href="../attacks/Bodyslam.html" title="Bodyslam">Bodyslam</a></td>
-			<td class="normal">Normal</td>
+			<td><script>document.write(generateLink('Bodyslam','../attacks/'));</script></td>
+			<script>document.write(generateType('Normal'));</script>
 		</tr>
 		<tr>
 			<td>1</td>
-			<td><a href="../attacks/Earthquake.html" title="Earthquake">Earthquake</a></td>
-			<td class="ground">Ground</td>
+			<td><script>document.write(generateLink('Earthquake','../attacks/'));</script></td>
+			<script>document.write(generateType('Ground'));</script>
 		</tr>
 		<tr>
 			<td>9</td>
-			<td><a href="../attacks/Slash.html" title="Slash">Slash</a></td>
-			<td class="normal">Normal</td>
+			<td><script>document.write(generateLink('Slash','../attacks/'));</script></td>
+			<script>document.write(generateType('Normal'));</script>
 		</tr>
 		<tr>
 			<td>15</td>
-			<td><a href="../attacks/Slash.html" title="Slash">Slash</a></td>
-			<td class="normal">Normal</td>
+			<td><script>document.write(generateLink('Slash','../attacks/'));</script></td>
+			<script>document.write(generateType('Normal'));</script>
 		</tr>
 		<tr>
 			<td>24</td>
-			<td><a href="../attacks/Slash.html" title="Slash">Slash</a></td>
-			<td class="normal">Normal</td>
+			<td><script>document.write(generateLink('Slash','../attacks/'));</script></td>
+			<script>document.write(generateType('Normal'));</script>
 		</tr>
 		<tr>
 			<td>55</td>
-			<td><a href="../attacks/Flamethrower.html" title="Flamethrower">Flamethrower</a></td>
-			<td class="fire">Fire</td>
+			<td><script>document.write(generateLink('Flamethrower','../attacks/'));</script></td>
+			<script>document.write(generateType('Fire'));</script>
 		</tr>
 		<tr>
 			<td>69</td>
-			<td><a href="../attacks/Fire Blast.html" title="Fire Blast">Fire Blast</a></td>
-			<td class="fire">Fire</td>
+			<td><script>document.write(generateLink('Fire Blast','../attacks/'));</script></td>
+			<script>document.write(generateType('Fire'));</script>
 		</tr>
 		<tr>
 			<td>70</td>
-			<td><a href="../attacks/Slash.html" title="Slash">Slash</a></td>
-			<td class="normal">Normal</td>
+			<td><script>document.write(generateLink('Slash','../attacks/'));</script></td>
+			<script>document.write(generateType('Normal'));</script>
 		</tr>
 	</table>
 	<table class="encountertbl">
@@ -116,13 +94,13 @@
 			<th>Note</th>
 		</tr>
 		<tr>
-			<td><a href="../walkthrough/Mansion Floor 1.html" title="Mansion Floor 1">Mansion Floor 1</a></td>
+			<td><script>document.write(generateLink('Mansion Floor 1','../walkthrough/'));</script></td>
 			<td>60</td>
 			<td>4</td>
 			<td>Land</td>
 		</tr>
 		<tr>
-			<td><a href="../walkthrough/Mansion Floor 2.html" title="Mansion Floor 2">Mansion Floor 2</a></td>
+			<td><script>document.write(generateLink('Mansion Floor 2','../walkthrough/'));</script></td>
 			<td>59</td>
 			<td>5</td>
 			<td>Land</td>

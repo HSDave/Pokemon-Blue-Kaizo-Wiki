@@ -1,28 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Ivysaur</title>
+    <script src="../javaScript/functions.js"></script>
+	<title>Ivysaur</title>
 </head>
 <body>
 	<style>
 		@import url("../css/style.css");
 	</style>
-	<div class="top">
-		<button class="header" onclick="window.location.href = '../Index.html';" title="home">Home</button>
-		<button class="header" onclick="window.location.href = 'PokemonIndex.html';" title="Pokemon List">Pokemon List</button>
-		<button class="header" onclick="window.location.href = '../attacks/AttackIndex.html';" title="Attack List">Attack List</button>
-		<button class="header" onclick="window.location.href = '../items/Item List.html';" title="Item List">Item List</button>
-		<button class="header" onclick="window.location.href = '../walkthrough/Walkthrough.html';" title="Walkthrough">Walkthrough</button>
-	</div>
-	<hr></hr>
+	<script>document.write(generateHeader('../'));</script>
 	<h2>Ivysaur</h2>
-	<button class="next" onclick="window.location.href = 'Bulbasaur.html';" title="Bulbasaur">Previous</button>
-	<button class="next" onclick="window.location.href = 'Venusaur.html';" title="Venusaur">Next</button>
+	<script>document.write(generateButton('Bulbasaur','Previous','../pokemon/'));</script>
+	<script>document.write(generateButton('Venusaur','Next','../pokemon/'));</script>
 	<table class="typetbl">
 		<tr>
 			<td>Type: </td>
-			<td class="grass">Grass</td>
-			<td class="poison">Poison</td>
+			<script>document.write(generateType('Grass'));</script>
+			<script>document.write(generateType('Poison'));</script>
 		</tr>
 	</table>
 	<div class = "pull-left">
@@ -30,25 +24,9 @@
 			<img src="../images/Ivysaur.jpg" class="pkmnimg" alt="Ivysaur"></img>
 		</a>
 		<div class="clearfix"></div>
-		<table class="stattbl">
-			<caption>Base Stats</caption>
-			<tr>
-				<th>Att</th>
-				<th>Hp</th>
-				<th>Def</th>
-				<th>Spd</th>
-				<th>Spc</th>
-			</tr>
-			<tr>
-				<td>60</td>
-				<td>62</td>
-				<td>63</td>
-				<td>60</td>
-				<td>80</td>
-			</tr>
-		</table>
-		<p>Evolves at lvl 16 from <a href="Bulbasaur.html" title="Bulbasaur">Bulbasaur</a></br>
-		Evolves at lvl 36 to <a href="Venusaur.html" title="Venusaur">Venusaur</a></p>
+		<script>document.write(generateBaseStatTable('Ivysaur'));</script>
+		<p>Evolves at lvl 16 from <script>document.write(generateLink('Bulbasaur','../pokemon/'));</script></br>
+		Evolves at lvl 36 to <script>document.write(generateLink('Venusaur','../pokemon/'));</script></p>
 	</div>
 	<table class="movetbl">
 		<caption>Learnset</caption>
@@ -59,53 +37,53 @@
 		</tr>
 		<tr>
 			<td>1</td>
-			<td><a href="../attacks/Sleep Powder.html" title="Sleep Powder">Sleep Powder</a></td>
-			<td class="grass">Grass</td>
+			<td><script>document.write(generateLink('Sleep Powder','../attacks/'));</script></td>
+			<script>document.write(generateType('Grass'));</script>
 		</tr>
 		<tr>
 			<td>1</td>
-			<td><a href="../attacks/Bodyslam.html" title="Bodyslam">Bodyslam</a></td>
-			<td class="normal">Normal</td>
+			<td><script>document.write(generateLink('Bodyslam','../attacks/'));</script></td>
+			<script>document.write(generateType('Normal'));</script>
 		</tr>
 		<tr>
 			<td>1</td>
-			<td><a href="../attacks/Razor Leaf.html" title="Razor Leaf">Razor Leaf</a></td>
-			<td class="grass">Grass</td>
+			<td><script>document.write(generateLink('Razor Leaf','../attacks/'));</script></td>
+			<script>document.write(generateType('Grass'));</script>
 		</tr>
 		<tr>
 			<td>30</td>
-			<td><a href="../attacks/Razor Leaf.html" title="Razor Leaf">Razor Leaf</a></td>
-			<td class="grass">Grass</td>
+			<td><script>document.write(generateLink('Razor Leaf','../attacks/'));</script></td>
+			<script>document.write(generateType('Grass'));</script>
 		</tr>
 		<tr>
 			<td>31</td>
-			<td><a href="../attacks/Razor Leaf.html" title="Razor Leaf">Razor Leaf</a></td>
-			<td class="grass">Grass</td>
+			<td><script>document.write(generateLink('Razor Leaf','../attacks/'));</script></td>
+			<script>document.write(generateType('Grass'));</script>
 		</tr>
 		<tr>
 			<td>32</td>
-			<td><a href="../attacks/Razor Leaf.html" title="Razor Leaf">Razor Leaf</a></td>
-			<td class="grass">Grass</td>
+			<td><script>document.write(generateLink('Razor Leaf','../attacks/'));</script></td>
+			<script>document.write(generateType('Grass'));</script>
 		</tr>
 		<tr>
 			<td>33</td>
-			<td><a href="../attacks/Razor Leaf.html" title="Razor Leaf">Razor Leaf</a></td>
-			<td class="grass">Grass</td>
+			<td><script>document.write(generateLink('Razor Leaf','../attacks/'));</script></td>
+			<script>document.write(generateType('Grass'));</script>
 		</tr>
 		<tr>
 			<td>38</td>
-			<td><a href="../attacks/Razor Leaf.html" title="Razor Leaf">Razor Leaf</a></td>
-			<td class="grass">Grass</td>
+			<td><script>document.write(generateLink('Razor Leaf','../attacks/'));</script></td>
+			<script>document.write(generateType('Grass'));</script>
 		</tr>
 		<tr>
 			<td>46</td>
-			<td><a href="../attacks/Razor Leaf.html" title="Razor Leaf">Razor Leaf</a></td>
-			<td class="grass">Grass</td>
+			<td><script>document.write(generateLink('Razor Leaf','../attacks/'));</script></td>
+			<script>document.write(generateType('Grass'));</script>
 		</tr>
 		<tr>
 			<td>54</td>
-			<td><a href="../attacks/Sleep Powder.html" title="Sleep Powder">Sleep Powder</a></td>
-			<td class="grass">Grass</td>
+			<td><script>document.write(generateLink('Sleep Powder','../attacks/'));</script></td>
+			<script>document.write(generateType('Grass'));</script>
 		</tr>
 	</table>
 	<table class="encountertbl">
@@ -117,7 +95,7 @@
 			<th>Note</th>
 		</tr>
 		<tr>
-			<td><a href="../walkthrough/Route 7.html" title="Route 7">Route 7</a></td>
+			<td><script>document.write(generateLink('Route 7','../walkthrough/'));</script></td>
 			<td>44</td>
 			<td>10</td>
 			<td>Land</td>

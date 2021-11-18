@@ -1,27 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Caterpie</title>
+    <script src="../javaScript/functions.js"></script>
+	<title>Caterpie</title>
 </head>
 <body>
 	<style>
 		@import url("../css/style.css");
 	</style>
-	<div class="top">
-		<button class="header" onclick="window.location.href = '../Index.html';" title="home">Home</button>
-		<button class="header" onclick="window.location.href = 'PokemonIndex.html';" title="Pokemon List">Pokemon List</button>
-		<button class="header" onclick="window.location.href = '../attacks/AttackIndex.html';" title="Attack List">Attack List</button>
-		<button class="header" onclick="window.location.href = '../items/Item List.html';" title="Item List">Item List</button>
-		<button class="header" onclick="window.location.href = '../walkthrough/Walkthrough.html';" title="Walkthrough">Walkthrough</button>
-	</div>
-	<hr></hr>
+	<script>document.write(generateHeader('../'));</script>
 	<h2>Caterpie</h2>
-	<button class="next" onclick="window.location.href = 'Blastoise.html';" title="Blastoise">Previous</button>
-	<button class="next" onclick="window.location.href = 'Metapod.html';" title="Metapod">Next</button>
+	<script>document.write(generateButton('Blastoise','Previous','../pokemon/'));</script>
+	<script>document.write(generateButton('Metapod','Next','../pokemon/'));</script>
 	<table class="typetbl">
 		<tr>
 			<td>Type: </td>
-			<td class="bug">Bug</td>
+			<script>document.write(generateType('Bug'));</script>
 		</tr>
 	</table>
 	<div class = "pull-left">
@@ -29,24 +23,8 @@
 			<img src="../images/Caterpie.jpg" class="pkmnimg" alt="Caterpie"></img>
 		</a>
 		<div class="clearfix"></div>
-		<table class="stattbl">
-			<caption>Base Stats</caption>
-			<tr>
-				<th>Att</th>
-				<th>Hp</th>
-				<th>Def</th>
-				<th>Spd</th>
-				<th>Spc</th>
-			</tr>
-			<tr>
-				<td>45</td>
-				<td>30</td>
-				<td>35</td>
-				<td>45</td>
-				<td>20</td>
-			</tr>
-		</table>
-		<p>Evolves at lvl 7 to <a href="Metapod.html" title="Metapod">Metapod</a></p>
+		<script>document.write(generateBaseStatTable('Caterpie'));</script>
+		<p>Evolves at lvl 7 to <script>document.write(generateLink('Metapod','../pokemon/'));</script></p>
 	</div>
 	<table class="movetbl">
 		<caption>Learnset</caption>
@@ -57,13 +35,13 @@
 		</tr>
 		<tr>
 			<td>1</td>
-			<td><a href="../attacks/Tackle.html" title="Tackle">Tackle</a></td>
-			<td class="normal">Normal</td>
+			<td><script>document.write(generateLink('Tackle','../attacks/'));</script></td>
+			<script>document.write(generateType('Normal'));</script>
 		</tr>
 		<tr>
 			<td>1</td>
-			<td><a href="../attacks/String Shot.html" title="String Shot">String Shot</a></td>
-			<td class="bug">Bug</td>
+			<td><script>document.write(generateLink('String Shot','../attacks/'));</script></td>
+			<script>document.write(generateType('Bug'));</script>
 		</tr>
 	</table>
 	<table class="encountertbl">
@@ -75,7 +53,7 @@
 			<th>Note</th>
 		</tr>
 		<tr>
-			<td><a href="../walkthrough/Route 1.html" title="Route 1">Route 1</a></td>
+			<td><script>document.write(generateLink('Route 1','../walkthrough/'));</script></td>
 			<td>3</td>
 			<td>15</td>
 			<td>Land</td>
