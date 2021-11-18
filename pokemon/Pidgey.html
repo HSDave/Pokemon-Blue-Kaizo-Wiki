@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="../javaScript/functions.js"></script>
+    <title>Pidgey</title>
+</head>
+<body>
+	<style>
+		@import url("../css/style.css");
+	</style>
+	<script>document.write(generateHeader('../'));</script>
+	<h2>Pidgey</h2>
+	<script>
+		document.write(generateButton('Beedrill','Previous','../pokemon/'));
+		document.write(generateButton('Pidgeotto','Next','../pokemon/'));
+	</script>
+	<table class="typetbl">
+		<tr>
+			<td>Type: </td>
+			<script>document.write(generateType('Normal'));</script>
+			<script>document.write(generateType('Flying'));</script>
+		</tr>
+	</table>
+	<div class = "pull-left">
+		<a href="../images/Pidgey.jpg" target="_blank" title="Pidgey.jpg">
+			<img src="../images/Pidgey.jpg" class="pkmnimg" alt="Pidgey"></img>
+		</a>
+		<div class="clearfix"></div>
+		<script>document.write(generateBaseStatTable('Pidgey'));</script>
+		<p>Evolves at lvl 16 from <script>document.write(generateLink('Pidgeotto','../pokemon/'));</script></p>
+	</div>
+	<table class="movetbl">
+		<caption>Learnset</caption>
+		<tr>
+			<th>Lvl</th>
+			<th>Attack</th>
+			<th>Type</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td><script>document.write(generateLink('Wing Attack','../attacks/'));</script></td>
+			<script>document.write(generateType('Flying'));</script>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td><script>document.write(generateLink('Sand Attack','../attacks/'));</script></td>
+			<script>document.write(generateType('Ground'));</script>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td><script>document.write(generateLink('Quick Attack','../attacks/'));</script></td>
+			<script>document.write(generateType('Normal'));</script>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td><script>document.write(generateLink('Sand Attack','../attacks/'));</script></td>
+			<script>document.write(generateType('Ground'));</script>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td><script>document.write(generateLink('Swift','../attacks/'));</script></td>
+			<script>document.write(generateType('Normal'));</script>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td><script>document.write(generateLink('Sand Attack','../attacks/'));</script></td>
+			<script>document.write(generateType('Ground'));</script>
+		</tr>
+		<tr>
+			<td>28</td>
+			<td><script>document.write(generateLink('Sand Attack','../attacks/'));</script></td>
+			<script>document.write(generateType('Ground'));</script>
+		</tr>
+		<tr>
+			<td>36</td>
+			<td><script>document.write(generateLink('Sand Attack','../attacks/'));</script></td>
+			<script>document.write(generateType('Ground'));</script>
+		</tr>
+		<tr>
+			<td>44</td>
+			<td><script>document.write(generateLink('Sand Attack','../attacks/'));</script></td>
+			<script>document.write(generateType('Ground'));</script>
+		</tr>
+	</table>
+	<table class="encountertbl">
+		<caption>Encounter</caption>
+		<tr>
+			<th>Place</th>
+			<th>Level</th>
+			<th>Rate [%]</th>
+			<th>Note</th>
+		</tr>
+		<tr>
+			<td><script>document.write(generateLink('Route 1','../walkthrough/'));</script></td>
+			<td>3</td>
+			<td>25</td>
+			<td>Land</td>
+		</tr>
+		<tr>
+			<td><script>document.write(generateLink('Route 3','../walkthrough/'));</script></td>
+			<td>12</td>
+			<td>15</td>
+			<td>Land</td>
+		</tr>
+		<tr>
+			<td><script>document.write(generateLink('Viridian Forest','../walkthrough/'));</script></td>
+			<td>6</td>
+			<td>10</td>
+			<td>Land</td>
+		</tr>
+	</table>
+</body>
+</html>
