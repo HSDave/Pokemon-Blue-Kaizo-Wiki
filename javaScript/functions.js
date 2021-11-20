@@ -314,18 +314,18 @@ const statTable = {
 	]},
 	"pidgey" : {basestat:[40,45,40,56,35], id:"#016", learnset:[
 		{lvl:"1", attack:"Wing Attack"},
-		{lvl:"1", attack:"Sand-Attack"},
+		{lvl:"1", attack:"Sand Attack"},
 		{lvl:"1", attack:"Quick Attack"},
-		{lvl:"5", attack:"Sand-Attack"},
+		{lvl:"5", attack:"Sand Attack"},
 		{lvl:"6", attack:"Swift"},
-		{lvl:"7", attack:"Sand-Attack"},
+		{lvl:"7", attack:"Sand Attack"},
 		{lvl:"28", attack:"Sand Attack"},
 		{lvl:"36", attack:"Sand Attack"},
 		{lvl:"44", attack:"Sand Attack"}
 	]},
 	"pidgeotto" : {basestat:[63,60,55,71,50], id:"#017", learnset:[
 		{lvl:"1", attack:"Wing Attack"},
-		{lvl:"1", attack:"Sand-Attack"},
+		{lvl:"1", attack:"Sand Attack"},
 		{lvl:"1", attack:"Quick Attack"},
 		{lvl:"5", attack:"Sand Attack"},
 		{lvl:"12", attack:"Sand Attack"},
@@ -414,8 +414,8 @@ const statTable = {
 	]},
 	"sandshrew" : {basestat:[50,75,85,40,30], id:"#027", learnset:[
 		{lvl:"1", attack:"Slash"},
-		{lvl:"1", attack:"Sand-Attack"},
-		{lvl:"10", attack:"Sand-Attack"},
+		{lvl:"1", attack:"Sand Attack"},
+		{lvl:"10", attack:"Sand Attack"},
 		{lvl:"16", attack:"Dig"},
 		{lvl:"24", attack:"Slash"},
 		{lvl:"31", attack:"Slash"},
