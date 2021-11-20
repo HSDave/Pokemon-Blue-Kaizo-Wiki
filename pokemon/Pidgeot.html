@@ -19,9 +19,9 @@
 	<style>
 		@import url("../css/style.css");
 	</style>
-	<script>document.write(generateHeader('../'));</script>
-	<h2>#018 Pidgeot</h2>
 	<script>
+		document.write(generateHeader('../'));
+		document.write(generateTitle("Pidgeot"));
 		document.write(generateButton('Pidgeotto','Previous','../pokemon/'));
 		document.write(generateButton('Rattata','Next','../pokemon/'));
 	</script>
@@ -40,42 +40,7 @@
 		<script>document.write(generateBaseStatTable('Pidgeot'));</script>
 		<p>Evolves at lvl 20 from <script>document.write(generateLink('Pidgeotto','../pokemon/'));</script></p>
 	</div>
-	<table class="movetbl">
-		<caption>Learnset</caption>
-		<tr>
-			<th>Lvl</th>
-			<th>Attack</th>
-			<th>Type</th>
-		</tr>
-		<tr>
-			<td>1</td>
-			<script>document.write(generateAttack('Razor Wind','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>1</td>
-			<script>document.write(generateAttack('Sand Attack','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>1</td>
-			<script>document.write(generateAttack('Quick Attack','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>1</td>
-			<script>document.write(generateAttack('Hyper Beam','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>21</td>
-			<script>document.write(generateAttack('Razor Wind','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>44</td>
-			<script>document.write(generateAttack('Quick Attack','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>31</td>
-			<script>document.write(generateAttack('Razor Wind','../attacks/'));</script>
-		</tr>
-	</table>
+	<script>document.write(generateMoveTable("Pidgeot"));</script>
 	<table class="encountertbl">
 		<caption>Encounter</caption>
 		<tr>
