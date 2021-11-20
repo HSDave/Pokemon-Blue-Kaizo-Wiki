@@ -42,9 +42,9 @@ const attackTable = {
 	'egg bomb' : 'Normal',
 	'ember' : 'Fire',
 	'explosion' : 'Normal',
-	'Fire blast' : 'Fire',
-	'Fire punch' : 'Fire',
-	'Fire spin' : 'Fire',
+	'fire blast' : 'Fire',
+	'fire punch' : 'Fire',
+	'fire spin' : 'Fire',
 	'fissure' : 'Ground',
 	'flamethrower' : 'Fire',
 	'flash' : 'Normal',
@@ -167,7 +167,7 @@ const attackTable = {
 	'withdraw' : 'Water',
 	'wrap' : 'Normal'
 };
-const attackSelect = (attack) => attackTable[attack] || 'Normal';
+const attackSelect = (attack) => attackTable[attack] || '???';
 
 const statTable = {
 	"bulbasaur" : {basestat:[45,49,49,45,65], id:"#001", learnset:[
