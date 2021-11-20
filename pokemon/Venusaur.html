@@ -8,10 +8,12 @@
 	<style>
 		@import url("../css/style.css");
 	</style>
-	<script>document.write(generateHeader('../'));</script>
-	<h2>#003 Venusaur</h2>
-	<script>document.write(generateButton('Ivysaur','Previous','../pokemon/'));</script>
-	<script>document.write(generateButton('Charmander','Next','../pokemon/'));</script>
+	<script>
+		document.write(generateHeader('../'));
+		document.write(generateTitle("Venusaur"));
+		document.write(generateButton('Ivysaur','Previous','../pokemon/'));
+		document.write(generateButton('Charmander','Next','../pokemon/'));
+	</script>
 	<table class="typetbl">
 		<tr>
 			<td>Type: </td>
@@ -27,58 +29,7 @@
 		<script>document.write(generateBaseStatTable('Venusaur'));</script>
 		<p>Evolves at lvl 36 from <script>document.write(generateLink('Ivysaur','../pokemon/'));</script></p>
 	</div>
-	<table class="movetbl">
-		<caption>Learnset</caption>
-		<tr>
-			<th>Lvl</th>
-			<th>Attack</th>
-			<th>Type</th>
-		</tr>
-		<tr>
-			<td>1</td>
-			<script>document.write(generateAttack('Sleep Powder','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>1</td>
-			<script>document.write(generateAttack('Bodyslam','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>1</td>
-			<script>document.write(generateAttack('Razor Leaf','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>1</td>
-			<script>document.write(generateAttack('Double Team','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>7</td>
-			<script>document.write(generateAttack('Razor Leaf','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>13</td>
-			<script>document.write(generateAttack('Razor Leaf','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>22</td>
-			<script>document.write(generateAttack('Razor Leaf','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>30</td>
-			<script>document.write(generateAttack('Razor Leaf','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>43</td>
-			<script>document.write(generateAttack('Razor Leaf','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>55</td>
-			<script>document.write(generateAttack('Sleep Powder','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>65</td>
-			<script>document.write(generateAttack('Razor Leaf','../attacks/'));</script>
-		</tr>
-	</table>
+	<script>document.write(generateMoveTable("Venusaur"));</script>
 	<table class="encountertbl">
 		<caption>Encounter</caption>
 		<tr>

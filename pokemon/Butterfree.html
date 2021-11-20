@@ -8,9 +8,9 @@
 	<style>
 		@import url("../css/style.css");
 	</style>
-	<script>document.write(generateHeader('../'));</script>
-	<h2>#012 Butterfree</h2>
 	<script>
+		document.write(generateHeader('../'));
+		document.write(generateTitle("Butterfree"));
 		document.write(generateButton('Metapod','Previous','../pokemon/'));
 		document.write(generateButton('Weedle','Next','../pokemon/'));
 	</script>
@@ -29,54 +29,7 @@
 		<script>document.write(generateBaseStatTable('Butterfree'));</script>
 		<p>Evolves at lvl 10 from <script>document.write(generateLink('Metapod','../pokemon/'));</script></p>
 	</div>
-	<table class="movetbl">
-		<caption>Learnset</caption>
-		<tr>
-			<th>Lvl</th>
-			<th>Attack</th>
-			<th>Type</th>
-		</tr>
-		<tr>
-			<td>1</td>
-			<script>document.write(generateAttack('Psybeam','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>1</td>
-			<script>document.write(generateAttack('Stun Spore','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>1</td>
-			<script>document.write(generateAttack('Sleep Powder','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>12</td>
-			<script>document.write(generateAttack('Psybeam','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>15</td>
-			<script>document.write(generateAttack('Stun Spore','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>16</td>
-			<script>document.write(generateAttack('Stun Spore','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>17</td>
-			<script>document.write(generateAttack('Stun Spore','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>21</td>
-			<script>document.write(generateAttack('Stun Spore','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>26</td>
-			<script>document.write(generateAttack('Stun Spore','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>32</td>
-			<script>document.write(generateAttack('Sleep Powder','../attacks/'));</script>
-		</tr>
-	</table>
+	<script>document.write(generateMoveTable("Butterfree"));</script>
 	<table class="encountertbl">
 		<caption>Encounter</caption>
 		<tr>

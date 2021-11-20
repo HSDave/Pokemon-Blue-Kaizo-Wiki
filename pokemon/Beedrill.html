@@ -8,9 +8,9 @@
 	<style>
 		@import url("../css/style.css");
 	</style>
-	<script>document.write(generateHeader('../'));</script>
-	<h2>#015 Beedrill</h2>
 	<script>
+		document.write(generateHeader('../'));
+		document.write(generateTitle("Beedrill"));
 		document.write(generateButton('Kakuna','Previous','../pokemon/'));
 		document.write(generateButton('Pidgey','Next','../pokemon/'));
 	</script>
@@ -29,42 +29,7 @@
 		<script>document.write(generateBaseStatTable('Beedrill'));</script>
 		<p>Evolves at lvl 10 from <script>document.write(generateLink('Kakuna','../pokemon/'));</script></p>
 	</div>
-	<table class="movetbl">
-		<caption>Learnset</caption>
-		<tr>
-			<th>Lvl</th>
-			<th>Attack</th>
-			<th>Type</th>
-		</tr>
-		<tr>
-			<td>1</td>
-			<script>document.write(generateAttack('Twineedle','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>12</td>
-			<script>document.write(generateAttack('Twineedle','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>16</td>
-			<script>document.write(generateAttack('Twineedle','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>20</td>
-			<script>document.write(generateAttack('Twineedle','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>25</td>
-			<script>document.write(generateAttack('Twineedle','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>30</td>
-			<script>document.write(generateAttack('Pin Missile','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>35</td>
-			<script>document.write(generateAttack('Twineedle','../attacks/'));</script>
-		</tr>
-	</table>
+	<script>document.write(generateMoveTable("Beedrill"));</script>
 	<table class="encountertbl">
 		<caption>Encounter</caption>
 		<tr>

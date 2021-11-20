@@ -8,8 +8,12 @@
 	<style>
 		@import url("../css/style.css");
 	</style>
-	<script>document.write(generateHeader('../'));</script>
-	<h2>#039 Jigglypuff</h2>
+	<script>
+		document.write(generateHeader('../'));
+		document.write(generateTitle("Jigglypuff"));
+		document.write(generateButton('Ninetales','Previous','../pokemon/'));
+		document.write(generateButton('Wigglytuff','Next','../pokemon/'));
+	</script>
 	<table class="typetbl">
 		<tr>
 			<td>Type: </td>
@@ -24,61 +28,7 @@
 		<script>document.write(generateBaseStatTable('Jigglypuff'));</script>
 		<p>Evolves with Moonstone to </br><script>document.write(generateLink('Wigglytuff','../pokemon/'));</script></p>
 	</div>
-	<table class="movetbl">
-		<caption>Learnset</caption>
-		<tr>
-			<th>Lvl</th>
-			<th>Attack</th>
-			<th>Type</th>
-		</tr>
-		<tr>
-			<td>1</td>
-			<script>document.write(generateAttack('Sing','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>1</td>
-			<td><a href="../attacks/Double-Edge.html" title="Double-Edge">Double-Edge</a></td>
-			<script>document.write(generateType('Normal'));</script>
-		</tr>
-		<tr>
-			<td>1</td>
-			<script>document.write(generateAttack('Rest','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>9</td>
-			<td><a href="../attacks/Double-Edge.html" title="Double-Edge">Double-Edge</a></td>
-			<script>document.write(generateType('Normal'));</script>
-		</tr>
-		<tr>
-			<td>14</td>
-			<td><a href="../attacks/Double-Edge.html" title="Double-Edge">Double-Edge</a></td>
-			<script>document.write(generateType('Normal'));</script>
-		</tr>
-		<tr>
-			<td>19</td>
-			<td><a href="../attacks/Double-Edge.html" title="Double-Edge">Double-Edge</a></td>
-			<script>document.write(generateType('Normal'));</script>
-		</tr>
-		<tr>
-			<td>24</td>
-			<td><a href="../attacks/Double-Edge.html" title="Double-Edge">Double-Edge</a></td>
-			<script>document.write(generateType('Normal'));</script>
-		</tr>
-		<tr>
-			<td>29</td>
-			<td><a href="../attacks/Double-Edge.html" title="Double-Edge">Double-Edge</a></td>
-			<script>document.write(generateType('Normal'));</script>
-		</tr>
-		<tr>
-			<td>34</td>
-			<script>document.write(generateAttack('Bodyslam','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>39</td>
-			<td><a href="../attacks/Double-Edge.html" title="Double-Edge">Double-Edge</a></td>
-			<script>document.write(generateType('Normal'));</script>
-		</tr>
-	</table>
+	<script>document.write(generateMoveTable("Jigglypuff"));</script>
 	<table class="encountertbl">
 		<caption>Encounter</caption>
 		<tr>

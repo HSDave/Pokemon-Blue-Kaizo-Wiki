@@ -8,10 +8,12 @@
 	<style>
 		@import url("../css/style.css");
 	</style>
-	<script>document.write(generateHeader('../'));</script>
-	<h2>#005 Charmeleon</h2>
-	<script>document.write(generateButton('Charmander','Previous','../pokemon/'));</script>
-	<script>document.write(generateButton('Charizard','Next','../pokemon/'));</script>
+	<script>
+		document.write(generateHeader('../'));
+		document.write(generateTitle("Charmeleon"));
+		document.write(generateButton('Charmander','Previous','../pokemon/'));
+		document.write(generateButton('Charizard','Next','../pokemon/'));
+	</script>
 	<table class="typetbl">
 		<tr>
 			<td>Type: </td>
@@ -27,50 +29,7 @@
 		<p>Evolves at lvl 18 from <script>document.write(generateLink('Charmander','../pokemon/'));</script></br>
 		Evolves at lvl 36 to <script>document.write(generateLink('Charizard','../pokemon/'));</script></p>
 	</div>
-	<table class="movetbl">
-		<caption>Learnset</caption>
-		<tr>
-			<th>Lvl</th>
-			<th>Attack</th>
-			<th>Type</th>
-		</tr>
-		<tr>
-			<td>1</td>
-			<script>document.write(generateAttack('Dragon Rage','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>1</td>
-			<script>document.write(generateAttack('Flamethrower','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>1</td>
-			<script>document.write(generateAttack('Slash','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>9</td>
-			<script>document.write(generateAttack('Slash','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>15</td>
-			<script>document.write(generateAttack('Slash','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>24</td>
-			<script>document.write(generateAttack('Slash','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>33</td>
-			<script>document.write(generateAttack('Slash','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>42</td>
-			<script>document.write(generateAttack('Flamethrower','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>56</td>
-			<script>document.write(generateAttack('Flamethrower','../attacks/'));</script>
-		</tr>
-	</table>
+	<script>document.write(generateMoveTable("Charmeleon"));</script>
 	<table class="encountertbl">
 		<caption>Encounter</caption>
 		<tr>

@@ -8,9 +8,9 @@
 	<style>
 		@import url("../css/style.css");
 	</style>
-	<script>document.write(generateHeader('../'));</script>
-	<h2>#013 Weedle</h2>
 	<script>
+		document.write(generateHeader('../'));
+		document.write(generateTitle("Weedle"));
 		document.write(generateButton('Butterfree','Previous','../pokemon/'));
 		document.write(generateButton('Kakuna','Next','../pokemon/'));
 	</script>
@@ -29,22 +29,7 @@
 		<script>document.write(generateBaseStatTable('Weedle'));</script>
 		<p>Evolves at lvl 7 to <script>document.write(generateLink('Kakuna','../pokemon/'));</script></p>
 	</div>
-	<table class="movetbl">
-		<caption>Learnset</caption>
-		<tr>
-			<th>Lvl</th>
-			<th>Attack</th>
-			<th>Type</th>
-		</tr>
-		<tr>
-			<td>1</td>
-			<script>document.write(generateAttack('Poison Sting','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>1</td>
-			<script>document.write(generateAttack('String Shot','../attacks/'));</script>
-		</tr>
-	</table>
+	<script>document.write(generateMoveTable("Weedle"));</script>
 	<table class="encountertbl">
 		<caption>Encounter</caption>
 		<tr>

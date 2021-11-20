@@ -8,10 +8,12 @@
 	<style>
 		@import url("../css/style.css");
 	</style>
-	<script>document.write(generateHeader('../'));</script>
-	<h2>#008 Wartortle</h2>
-	<script>document.write(generateButton('Squirtle','Previous','../pokemon/'));</script>
-	<script>document.write(generateButton('Blastoise','Next','../pokemon/'));</script>
+	<script>
+		document.write(generateHeader('../'));
+		document.write(generateTitle("Wartortle"));
+		document.write(generateButton('Squirtle','Previous','../pokemon/'));
+		document.write(generateButton('Blastoise','Next','../pokemon/'));
+	</script>
 	<table class="typetbl">
 		<tr>
 			<td>Type: </td>
@@ -27,54 +29,7 @@
 		<p>Evolves at lvl 16 from <script>document.write(generateLink('Squirtle','../pokemon/'));</script></br>
 		Evolves at lvl 36 to <script>document.write(generateLink('Blastoise','../pokemon/'));</script></p>
 	</div>
-	<table class="movetbl">
-		<caption>Learnset</caption>
-		<tr>
-			<th>Lvl</th>
-			<th>Attack</th>
-			<th>Type</th>
-		</tr>
-		<tr>
-			<td>1</td>
-			<script>document.write(generateAttack('Waterfall','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>1</td>
-			<script>document.write(generateAttack('Blizzard','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>1</td>
-			<script>document.write(generateAttack('Bodyslam','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>1</td>
-			<script>document.write(generateAttack('Dig','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>8</td>
-			<script>document.write(generateAttack('Waterfall','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>15</td>
-			<script>document.write(generateAttack('Waterfall','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>24</td>
-			<script>document.write(generateAttack('Dig','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>31</td>
-			<script>document.write(generateAttack('Dig','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>39</td>
-			<script>document.write(generateAttack('Dig','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>47</td>
-			<script>document.write(generateAttack('Hydro Pump','../attacks/'));</script>
-		</tr>
-	</table>
+	<script>document.write(generateMoveTable("Wartortle"));</script>
 	<table class="encountertbl">
 		<caption>Encounter</caption>
 		<tr>

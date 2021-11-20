@@ -8,10 +8,12 @@
 	<style>
 		@import url("../css/style.css");
 	</style>
-	<script>document.write(generateHeader('../'));</script>
-	<h2>#009 Blastoise</h2>
-	<script>document.write(generateButton('Wartortle','Previous','../pokemon/'));</script>
-	<script>document.write(generateButton('Caterpie','Next','../pokemon/'));</script>
+	<script>
+		document.write(generateHeader('../'));
+		document.write(generateTitle("Blastoise"));
+		document.write(generateButton('Wartortle','Previous','../pokemon/'));
+		document.write(generateButton('Caterpie','Next','../pokemon/'));
+	</script>
 	<table class="typetbl">
 		<tr>
 			<td>Type: </td>
@@ -26,54 +28,7 @@
 		<script>document.write(generateBaseStatTable('Blastoise'));</script>
 		<p>Evolves at lvl 36 from <script>document.write(generateLink('Wartortle','../pokemon/'));</script></p>
 	</div>
-	<table class="movetbl">
-		<caption>Learnset</caption>
-		<tr>
-			<th>Lvl</th>
-			<th>Attack</th>
-			<th>Type</th>
-		</tr>
-		<tr>
-			<td>1</td>
-			<script>document.write(generateAttack('Bodyslam','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>1</td>
-			<script>document.write(generateAttack('Hydro Pump','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>1</td>
-			<script>document.write(generateAttack('Blizzard','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>1</td>
-			<script>document.write(generateAttack('Earthquake','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>8</td>
-			<script>document.write(generateAttack('Hydro Pump','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>15</td>
-			<script>document.write(generateAttack('Earthquake','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>24</td>
-			<script>document.write(generateAttack('Bodyslam','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>31</td>
-			<script>document.write(generateAttack('Blizzard','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>42</td>
-			<script>document.write(generateAttack('Bodyslam','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>52</td>
-			<script>document.write(generateAttack('Hydro Pump','../attacks/'));</script>
-		</tr>
-	</table>
+	<script>document.write(generateMoveTable("Blastoise"));</script>
 	<table class="encountertbl">
 		<caption>Encounter</caption>
 		<tr>

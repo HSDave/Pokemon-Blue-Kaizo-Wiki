@@ -8,8 +8,10 @@
 	<style>
 		@import url("../css/style.css");
 	</style>
-	<script>document.write(generateHeader('../'));</script>
-	<h2>#001 Bulbasaur</h2>
+	<script>
+		document.write(generateHeader('../'));
+		document.write(generateTitle("Bulbasaur"));
+	</script>
 	<button class="phantom">Previous</button>
 	<script>document.write(generateButton('Ivysaur','Next','../pokemon/'));</script>
 	<table class="typetbl">
@@ -26,55 +28,7 @@
 		<script>document.write(generateBaseStatTable('Bulbasaur'));</script>
 		<p>Evolves at lvl 16 to <script>document.write(generateLink('Ivysaur','../pokemon/'));</script></p>
 	</div>
-	<table class="movetbl">
-		<caption>Learnset</caption>
-		<tr>
-			<th>Lvl</th>
-			<th>Attack</th>
-			<th>Type</th>
-		</tr>
-		<tr>
-			<td>1</td>
-			<script>document.write(generateAttack('Vine Whip','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>1</td>
-			<script>document.write(generateAttack('Tackle','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>1</td>
-			<script>document.write(generateAttack('Toxic','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>7</td>
-			<script>document.write(generateAttack('Absorb','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>10</td>
-			<script>document.write(generateAttack('Headbutt','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>20</td>
-			<script>document.write(generateAttack('Poison Powder','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>22</td>
-			<script>document.write(generateAttack('Razor Leaf','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>22</td>
-			<td><a href="../attacks/Double-Edge.html" title="Double-Edge">Double-Edge</a></td>
-			<script>document.write(generateType('Normal'));</script>
-		</tr>
-		<tr>
-			<td>41</td>
-			<script>document.write(generateAttack('Sleep Powder','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>48</td>
-			<script>document.write(generateAttack('Sleep Powder','../attacks/'));</script>
-		</tr>
-	</table>
+	<script>document.write(generateMoveTable("Bulbasaur"));</script>
 	<table class="encountertbl">
 		<caption>Encounter</caption>
 		<tr>

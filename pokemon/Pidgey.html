@@ -8,9 +8,9 @@
 	<style>
 		@import url("../css/style.css");
 	</style>
-	<script>document.write(generateHeader('../'));</script>
-	<h2>#016 Pidgey</h2>
 	<script>
+		document.write(generateHeader('../'));
+		document.write(generateTitle("Pidgey"));
 		document.write(generateButton('Beedrill','Previous','../pokemon/'));
 		document.write(generateButton('Pidgeotto','Next','../pokemon/'));
 	</script>
@@ -29,50 +29,7 @@
 		<script>document.write(generateBaseStatTable('Pidgey'));</script>
 		<p>Evolves at lvl 9 to <script>document.write(generateLink('Pidgeotto','../pokemon/'));</script></p>
 	</div>
-	<table class="movetbl">
-		<caption>Learnset</caption>
-		<tr>
-			<th>Lvl</th>
-			<th>Attack</th>
-			<th>Type</th>
-		</tr>
-		<tr>
-			<td>1</td>
-			<script>document.write(generateAttack('Wing Attack','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>1</td>
-			<script>document.write(generateAttack('Sand Attack','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>1</td>
-			<script>document.write(generateAttack('Quick Attack','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>5</td>
-			<script>document.write(generateAttack('Sand Attack','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>6</td>
-			<script>document.write(generateAttack('Swift','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>7</td>
-			<script>document.write(generateAttack('Sand Attack','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>28</td>
-			<script>document.write(generateAttack('Sand Attack','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>36</td>
-			<script>document.write(generateAttack('Sand Attack','../attacks/'));</script>
-		</tr>
-		<tr>
-			<td>44</td>
-			<script>document.write(generateAttack('Sand Attack','../attacks/'));</script>
-		</tr>
-	</table>
+	<script>document.write(generateMoveTable("Pidgey"));</script>
 	<table class="encountertbl">
 		<caption>Encounter</caption>
 		<tr>
