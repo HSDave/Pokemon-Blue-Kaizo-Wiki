@@ -245,7 +245,7 @@ const statTable = {
 		{lvl:"1", attack:"Tackle"},
 		{lvl:"8", attack:"Bite"},
 		{lvl:"13", attack:"Headbutt"},
-		{lvl:"16", attack:"Bubblebeam"},
+		{lvl:"16", attack:"Bubble Beam"},
 		{lvl:"28", attack:"Waterfall"},
 		{lvl:"35", attack:"Skull Bash"},
 		{lvl:"42", attack:"Hydro Pump"}
@@ -673,7 +673,7 @@ const statTable = {
 	]},
 	"psyduck" : {basestat:[50,52,48,55,50], id:"#054", learnset:[
 		{lvl:"1", attack:"Confusion"},
-		{lvl:"1", attack:"Bubblebeam"},
+		{lvl:"1", attack:"Bubble Beam"},
 		{lvl:"9", attack:"Psybeam"},
 		{lvl:"10", attack:"Waterfall"},
 		{lvl:"11", attack:"Seismic Toss"},
@@ -727,7 +727,7 @@ const statTable = {
 		{lvl:"1", attack:"Dig"}
 	]},
 	"poliwag" : {basestat:[40,50,40,90,40], id:"#060", learnset:[
-		{lvl:"1", attack:"Bubblebeam"},
+		{lvl:"1", attack:"Bubble Beam"},
 		{lvl:"1", attack:"Hypnosis"},
 		{lvl:"10", attack:"Body Slam"},
 		{lvl:"11", attack:"Body Slam"},
@@ -848,7 +848,7 @@ const statTable = {
 		{lvl:"1", attack:"Wrap"},
 		{lvl:"1", attack:"Supersonic"},
 		{lvl:"1", attack:"Toxic"},
-		{lvl:"1", attack:"Bubblebeam"},
+		{lvl:"1", attack:"Bubble Beam"},
 		{lvl:"7", attack:"Toxic"},
 		{lvl:"13", attack:"Toxic"},
 		{lvl:"18", attack:"Toxic"},
@@ -925,7 +925,7 @@ const statTable = {
 	]},
 	"slowpoke" : {basestat:[90,65,65,15,40], id:"#079", learnset:[
 		{lvl:"1", attack:"Confusion"},
-		{lvl:"1", attack:"Bubblebeam"},
+		{lvl:"1", attack:"Bubble Beam"},
 		{lvl:"1", attack:"Headbutt"},
 		{lvl:"18", attack:"Confusion"},
 		{lvl:"22", attack:"Confusion"},
@@ -1005,7 +1005,7 @@ const statTable = {
 	"seel" : {basestat:[65,45,55,45,70], id:"#086", learnset:[
 		{lvl:"1", attack:"Aurora Beam"},
 		{lvl:"1", attack:"Headbutt"},
-		{lvl:"1", attack:"Bubblebeam"},
+		{lvl:"1", attack:"Bubble Beam"},
 		{lvl:"1", attack:"Rest"},
 		{lvl:"30", attack:"Aurora Beam"},
 		{lvl:"35", attack:"Aurora Beam"},
@@ -1299,7 +1299,7 @@ const statTable = {
 	]},
 	"horsea" : {basestat:[30,40,70,60,70], id:"#116", learnset:[
 		{lvl:"1", attack:"Toxic"},
-		{lvl:"1", attack:"Bubblebeam"},
+		{lvl:"1", attack:"Bubble Beam"},
 		{lvl:"1", attack:"Smokescreen"},
 		{lvl:"19", attack:"Smokescreen"},
 		{lvl:"24", attack:"Smokescreen"},
@@ -1328,9 +1328,9 @@ const statTable = {
 	]},
 	"seaking" : {basestat:[80,92,65,68,80], id:"#119", learnset:[
 		{lvl:"1", attack:"Horn Drill"},
-		{lvl:"19", attack:"Bubblebeam"},
-		{lvl:"24", attack:"Bubblebeam"},
-		{lvl:"30", attack:"Bubblebeam"},
+		{lvl:"19", attack:"Bubble Beam"},
+		{lvl:"24", attack:"Bubble Beam"},
+		{lvl:"30", attack:"Bubble Beam"},
 		{lvl:"39", attack:"Waterfall"},
 		{lvl:"48", attack:"Horn Drill"},
 		{lvl:"54", attack:"Agility"}
@@ -1339,8 +1339,8 @@ const statTable = {
 		{lvl:"1", attack:"Double-Edge"},
 		{lvl:"17", attack:"Water Gun"},
 		{lvl:"22", attack:"Light Screen"},
-		{lvl:"27", attack:"Bubblebeam"},
-		{lvl:"32", attack:"Bubblebeam"},
+		{lvl:"27", attack:"Bubble Beam"},
+		{lvl:"32", attack:"Bubble Beam"},
 		{lvl:"37", attack:"Recover"},
 		{lvl:"42", attack:"Thunder Wave"},
 		{lvl:"47", attack:"Hydro Pump"}
