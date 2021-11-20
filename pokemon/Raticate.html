@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="../javaScript/functions.js"></script>
+    <title>Raticate</title>
+</head>
+<body>
+	<style>
+		@import url("../css/style.css");
+	</style>
+	<script>
+		document.write(generateHeader('../'));
+		document.write(generateTitle("Raticate"));
+		document.write(generateButton('Rattata','Previous','../pokemon/'));
+		document.write(generateButton('Spearow','Next','../pokemon/'));
+	</script>
+	<table class="typetbl">
+		<tr>
+			<td>Type: </td>
+			<script>document.write(generateType('Normal'));</script>
+		</tr>
+	</table>
+	<div class = "pull-left">
+		<a href="../images/Raticate.jpg" target="_blank" title="Raticate.jpg">
+			<img src="../images/Raticate.jpg" class="pkmnimg" alt="Raticate"></img>
+		</a>
+		<div class="clearfix"></div>
+		<script>document.write(generateBaseStatTable('Raticate'));</script>
+		<p>Evolves at lvl 20 from <script>document.write(generateLink('Rattata','../pokemon/'));</script></p>
+	</div>
+	<script>document.write(generateMoveTable("Raticate"));</script>
+	<table class="encountertbl">
+		<caption>Encounter</caption>
+		<tr>
+			<th>Place</th>
+			<th>Level</th>
+			<th>Rate [%]</th>
+			<th>Note</th>
+		</tr>
+		<tr>
+			<td><script>document.write(generateLink('Route 12','../walkthrough/'));</script></td>
+			<td>50</td>
+			<td>4</td>
+			<td>Land</td>
+		</tr>
+		<tr>
+			<td><script>document.write(generateLink('Route 13','../walkthrough/'));</script></td>
+			<td>50</td>
+			<td>10</td>
+			<td>Land</td>
+		</tr>
+		<tr>
+			<td><script>document.write(generateLink('Route 16','../walkthrough/'));</script></td>
+			<td>56</td>
+			<td>4</td>
+			<td>Land</td>
+		</tr>
+		<tr>
+			<td><script>document.write(generateLink('Route 18','../walkthrough/'));</script></td>
+			<td>56</td>
+			<td>15</td>
+			<td>Land</td>
+		</tr>
+		<tr>
+			<td><script>document.write(generateLink('Mansion Floor 4','../walkthrough/'));</script></td>
+			<td>63</td>
+			<td>25</td>
+			<td>Land</td>
+		</tr>
+	</table>
+</body>
+</html>
