@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="../javaScript/functions.js"></script>
+    <title>Raichu</title>
+</head>
+<body>
+	<style>
+		@import url("../css/style.css");
+	</style>
+	<script>
+		document.write(generateHeader('../'));
+		document.write(generateTitle("Raichu"));
+		document.write(generateButton('Pikachu','Previous','../pokemon/'));
+		document.write(generateButton('Sandshrew','Next','../pokemon/'));
+	</script>
+	<table class="typetbl">
+		<tr>
+			<td>Type: </td>
+			<script>document.write(generateType('Electric'));</script>
+		</tr>
+	</table>
+	<div class = "pull-left">
+		<a href="../images/Raichu.jpg" target="_blank" title="Raichu.jpg">
+			<img src="../images/Raichu.jpg" class="pkmnimg" alt="Raichu"></img>
+		</a>
+		<div class="clearfix"></div>
+		<script>document.write(generateBaseStatTable('Raichu'));</script>
+		<p>Evolves with <script>document.write(generateLink('Thunderstone','../items/'));</script> from <script>document.write(generateLink('Pikachu','../pokemon/'));</script></p>
+	</div>
+	<script>document.write(generateMoveTable("Raichu"));</script>
+	<table class="encountertbl">
+		<caption>Encounter</caption>
+		<tr>
+			<th>Place</th>
+			<th>Level</th>
+			<th>Rate [%]</th>
+			<th>Note</th>
+		</tr>
+		<tr>
+			<td><script>document.write(generateLink('Cerulean Cave Floor 2','../walkthrough/'));</script></td>
+			<td>100</td>
+			<td>5</td>
+			<td>Land</td>
+		</tr>
+	</table>
+</body>
+</html>
