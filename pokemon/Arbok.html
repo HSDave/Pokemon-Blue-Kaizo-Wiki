@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="../javaScript/functions.js"></script>
+    <title>Arbok</title>
+</head>
+<body>
+	<style>
+		@import url("../css/style.css");
+	</style>
+	<script>
+		document.write(generateHeader('../'));
+		document.write(generateTitle("Arbok"));
+		document.write(generateButton('Ekans','Previous','../pokemon/'));
+		document.write(generateButton('Pikachu','Next','../pokemon/'));
+	</script>
+	<table class="typetbl">
+		<tr>
+			<td>Type: </td>
+			<script>document.write(generateType('Poison'));</script>
+		</tr>
+	</table>
+	<div class = "pull-left">
+		<a href="../images/Arbok.jpg" target="_blank" title="Arbok.jpg">
+			<img src="../images/Arbok.jpg" class="pkmnimg" alt="Arbok"></img>
+		</a>
+		<div class="clearfix"></div>
+		<script>document.write(generateBaseStatTable('Arbok'));</script>
+		<p>Evolves at lvl 16 to <script>document.write(generateLink('Ekans','../pokemon/'));</script></p>
+	</div>
+	<script>document.write(generateMoveTable("Arbok"));</script>
+	<table class="encountertbl">
+		<caption>Encounter</caption>
+		<tr>
+			<th>Place</th>
+			<th>Level</th>
+			<th>Rate [%]</th>
+			<th>Note</th>
+		</tr>
+		<tr>
+			<td><script>document.write(generateLink('Route 13','../walkthrough/'));</script></td>
+			<td>50</td>
+			<td>15</td>
+			<td>Land</td>
+		</tr>
+		<tr>
+			<td><script>document.write(generateLink('Route 15','../walkthrough/'));</script></td>
+			<td>54</td>
+			<td>20</td>
+			<td>Land</td>
+		</tr>
+		<tr>
+			<td><script>document.write(generateLink('Route 21','../walkthrough/'));</script></td>
+			<td>72</td>
+			<td>10</td>
+			<td>Land</td>
+		</tr>
+	</table>
+</body>
+</html>
