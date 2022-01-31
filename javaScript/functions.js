@@ -397,11 +397,11 @@ const statTable = {
 		{lvl:"47", attack:"Glare"}
 	]},
 	"pikachu" : {basestat:[35,55,30,90,50], id:"#025", learnset:[
-		{lvl:"1", attack:"Thundershock"},
+		{lvl:"1", attack:"Thunder Shock"},
 		{lvl:"1", attack:"Quick Attack"},
 		{lvl:"1", attack:"Thunder Wave"},
 		{lvl:"9", attack:"Headbutt"},
-		{lvl:"16", attack:"Thunderpunch"},
+		{lvl:"16", attack:"Thunder Punch"},
 		{lvl:"20", attack:"Thunderbolt"},
 		{lvl:"30", attack:"Thunderbolt"},
 		{lvl:"43", attack:"Thunder"}
