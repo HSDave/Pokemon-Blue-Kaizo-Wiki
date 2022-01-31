@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="../javaScript/functions.js"></script>
+    <title>Fearow</title>
+</head>
+<body>
+	<style>
+		@import url("../css/style.css");
+	</style>
+	<script>
+		document.write(generateHeader('../'));
+		document.write(generateTitle("Fearow"));
+		document.write(generateButton('Spearow','Previous','../pokemon/'));
+		document.write(generateButton('Ekans','Next','../pokemon/'));
+	</script>
+	<table class="typetbl">
+		<tr>
+			<td>Type: </td>
+			<script>document.write(generateType('Normal'));</script>
+			<script>document.write(generateType('Flying'));</script>
+		</tr>
+	</table>
+	<div class = "pull-left">
+		<a href="../images/Fearow.jpg" target="_blank" title="Fearow.jpg">
+			<img src="../images/Fearow.jpg" class="pkmnimg" alt="Fearow"></img>
+		</a>
+		<div class="clearfix"></div>
+		<script>document.write(generateBaseStatTable('Fearow'));</script>
+		<p>Evolves at lvl 20 from <script>document.write(generateLink('Spearow','../pokemon/'));</script></p>
+	</div>
+	<script>document.write(generateMoveTable("Fearow"));</script>
+	<table class="encountertbl">
+		<caption>Encounter</caption>
+		<tr>
+			<th>Place</th>
+			<th>Level</th>
+			<th>Rate [%]</th>
+			<th>Note</th>
+		</tr>
+		<tr>
+			<td><script>document.write(generateLink('Route 12','../walkthrough/'));</script></td>
+			<td>50</td>
+			<td>5</td>
+			<td>Land</td>
+		</tr>
+		<tr>
+			<td><script>document.write(generateLink('Route 13','../walkthrough/'));</script></td>
+			<td>50</td>
+			<td>10</td>
+			<td>Land</td>
+		</tr>
+		<tr>
+			<td><script>document.write(generateLink('Route 17','../walkthrough/'));</script></td>
+			<td>56</td>
+			<td>10</td>
+			<td>Land</td>
+		</tr>
+		<tr>
+			<td><script>document.write(generateLink('Route 18','../walkthrough/'));</script></td>
+			<td>56</td>
+			<td>10</td>
+			<td>Land</td>
+		</tr>
+	</table>
+</body>
+</html>
