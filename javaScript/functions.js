@@ -1085,7 +1085,7 @@ const statTable = {
 		{lvl:"41", attack:"double kick"},
 		{lvl:"50", attack:"double kick"}
 	],  evolution:{from:16, to:"moonstone"}
-	}},
+	},
 	"nidoqueen" : {basestat:[90,82,87,76,75], type:["poison","ground"], id:"#031", learnset:[
 		{lvl:"1", attack:"lovely kiss"},
 		{lvl:"1", attack:"earthquake"},
@@ -1119,7 +1119,7 @@ const statTable = {
 		{lvl:"41", attack:"double kick"},
 		{lvl:"50", attack:"double kick"}
 	],  evolution:{from:16, to:"moonstone"}
-	}},
+	},
 	"nidoking" : {basestat:[81,92,77,85,75], type:["poison","ground"], id:"#034", learnset:[
 		{lvl:"1", attack:"blizzard"},
 		{lvl:"1", attack:"thunderbolt"},
@@ -1129,7 +1129,7 @@ const statTable = {
 		{lvl:"14", attack:"thunderbolt"},
 		{lvl:"42", attack:"earthquake"}
 	],  evolution:{from:"moonstone", to:""}
-	}},
+	},
 	"clefairy" : {basestat:[70,45,48,35,60], type:["normal"], id:"#035", learnset:[
 		{lvl:"1", attack:"sing"},
 		{lvl:"1", attack:"metronome"},
@@ -1140,14 +1140,14 @@ const statTable = {
 		{lvl:"39", attack:"metronome"},
 		{lvl:"48", attack:"metronome"}
 	],  evolution:{from:"", to:"moonstone"}
-	}},
+	},
 	"clefable" : {basestat:[95,70,73,60,85], type:["normal"], id:"#036", learnset:[
 		{lvl:"1", attack:"body slam"},
 		{lvl:"1", attack:"blizzard"},
 		{lvl:"1", attack:"psychic"},
 		{lvl:"1", attack:"thunder wave"}
 	],  evolution:{from:"moonstone", to:""}
-	}},
+	},
 	"vulpix" : {basestat:[38,41,40,65,65], type:["fire"], id:"#037", learnset:[
 		{lvl:"1", attack:"ember"},
 		{lvl:"1", attack:"confuse Ray"},
@@ -1157,11 +1157,11 @@ const statTable = {
 		{lvl:"35", attack:"flamethrower"},
 		{lvl:"42", attack:"flamethrower"}
 	],  evolution:{from:"", to:"firestone"}
-	}},
+	},
 	"ninetales" : {basestat:[73,76,75,100,100], type:["fire"], id:"#038", learnset:[
 		{lvl:"1", attack:"fire spin"}
 	],  evolution:{from:"firestone", to:""}
-	}},
+	},
 	"jigglypuff" : {basestat:[115,45,20,20,25], type:["normal"], type:["normal"], id:"#039", learnset:[
 		{lvl:"1", attack:"sing"},
 		{lvl:"1", attack:"double-edge"},
@@ -1174,14 +1174,14 @@ const statTable = {
 		{lvl:"34", attack:"body slam"},
 		{lvl:"39", attack:"double-edge"}
 	],  evolution:{from:"", to:"moonstone"}
-	}},
+	},
 	"wigglytuff" : {basestat:[140,70,45,45,50], type:["normal"], id:"#040", learnset:[
 		{lvl:"1", attack:"psychic"},
 		{lvl:"1", attack:"blizzard"},
 		{lvl:"1", attack:"double-edge"},
 		{lvl:"1", attack:"thunder wave"}
 	],  evolution:{from:"moonstone", to:""}
-	}},
+	},
 	"zubat" : {basestat:[40,45,35,55,40], type:["poison","flying"], id:"#041", learnset:[
 		{lvl:"1", attack:"wing attack"},
 		{lvl:"1", attack:"toxic"},
