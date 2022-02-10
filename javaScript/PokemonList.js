@@ -49,7 +49,7 @@ class C_Evolution {
 	generateEvolution(preevolution, evolution) {
 		var info = "";
 		if(preevolution !== null) {
-			info += '<p>' + preevolution.m_condition + ' to ' + generateLink("Pokemon", preevolution.m_pokemon, "../pokemon/");
+			info += '<p>' + preevolution.m_condition + ' to ' + generateLink("Pokemon", preevolution.m_pokemon, "../pokemon/") + '.';
 		}
 		if(Array.isArray(evolution)) {
 			for(var i in evolution) {
@@ -59,7 +59,7 @@ class C_Evolution {
 					} else {
 						info += '<p>'
 					}
-					info += evolution[i].m_condition + ' to ' + generateLink("Pokemon", evolution[i].m_pokemon, "../pokemon/");
+					info += evolution[i].m_condition + ' to ' + generateLink("Pokemon", evolution[i].m_pokemon, "../pokemon/") + '.';
 				}
 			}
 		} else if(evolution != null) {
@@ -68,7 +68,7 @@ class C_Evolution {
 			} else {
 				info += '<p>'
 			}
-			info += evolution.m_condition + ' to ' + generateLink("Pokemon", evolution.m_pokemon, "../pokemon/");
+			info += evolution.m_condition + ' to ' + generateLink("Pokemon", evolution.m_pokemon, "../pokemon/") + '.';
 		}
 		if(info != "") {
 			info += '</p>';

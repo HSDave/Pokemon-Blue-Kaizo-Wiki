@@ -780,7 +780,7 @@ function generateButtons(pokemon, path = '') {
 	var i = C_Pokemon_List.getIndex(pokemon) - 1;
 	var buttons;
 	if(pokemon.toLowerCase() == "bulbasaur") {
-		buttons = '<button class="phantom">Previous</button>';
+		buttons = '<button class="phantom">Previous</button>&nbsp;';
 	} else {
 		buttons = generateButton(C_Pokemon_List.m_Pokemon_List[i].m_name,'previous','../pokemon/',"Pokemon","pokemon");
 	}
