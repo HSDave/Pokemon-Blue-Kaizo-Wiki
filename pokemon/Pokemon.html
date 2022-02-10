@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="../javaScript/GeneralFunctions.js"></script>
+	<script src="../javaScript/PokemonList.js"></script>
+	<script src="../javaScript/functions.js"></script>
+	<script> var pokemon = titleCase(getCookie("Pokemon"));</script>
+    <title><script>pokemon</script></title>
+</head>
+<body>
+	<style>
+		@import url("../css/style.css");
+	</style>
+	<script>
+		document.write(generateHeader('../'));
+		document.write(generateTitle(pokemon));
+		document.write(generateButtons(pokemon,'../pokemon/'));
+	</script>
+	<table class="typetbl">
+		<tr>
+			<td>Type: </td>
+			<script>document.write(generateType(pokemon));</script>
+		</tr>
+	</table>
+	<div class = "pull-left">
+		<script>
+		document.write('<a href="../images/' + pokemon + '.jpg" target="_blank" title="' + pokemon + '.jpg">');
+			document.write('<img src="../images/' + pokemon + '.jpg" class="pkmnimg" alt="' + pokemon + '"></img>');
+		document.write('</a>');
+		</script>
+		<div class="clearfix"></div>
+		<script>document.write(generateBaseStatTable(pokemon));</script>
+		<script>document.write(generateEvolutionInfo(pokemon));</script>
+	</div>
+	<script>document.write(generateMoveTable(pokemon));</script>
+	<table class="encountertbl">
+		<caption>Encounter</caption>
+		<tr>
+			<th>Place</th>
+			<th>Level</th>
+			<th>Rate [%]</th>
+			<th>Note</th>
+		</tr>
+		<tr>
+			<td><script>document.write(generateLink('Route 1','../walkthrough/'));</script></td>
+			<td>3</td>
+			<td>15</td>
+			<td>Land</td>
+		</tr>
+	</table>
+</body>
+</html>
