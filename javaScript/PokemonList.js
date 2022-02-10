@@ -47,9 +47,10 @@ class C_Evolution {
 	}
 	
 	generateEvolution(preevolution, evolution) {
+		var paraclass = '<p class = "pokemonEvolution">';
 		var info = "";
 		if(preevolution !== null) {
-			info += '<p>' + preevolution.m_condition + ' to ' + generateLink("Pokemon", preevolution.m_pokemon, "../pokemon/") + '.';
+			info += paraclass + preevolution.m_condition + ' to ' + generateLink("Pokemon", preevolution.m_pokemon, "../pokemon/") + '.';
 		}
 		if(Array.isArray(evolution)) {
 			for(var i in evolution) {
@@ -57,7 +58,7 @@ class C_Evolution {
 					if(info != "") {
 						info += '</br>';
 					} else {
-						info += '<p>'
+						info += paraclass;
 					}
 					info += evolution[i].m_condition + ' to ' + generateLink("Pokemon", evolution[i].m_pokemon, "../pokemon/") + '.';
 				}
@@ -66,7 +67,7 @@ class C_Evolution {
 			if(info != "") {
 				info += '</br>';
 			} else {
-				info += '<p>'
+				info += paraclass;
 			}
 			info += evolution.m_condition + ' to ' + generateLink("Pokemon", evolution.m_pokemon, "../pokemon/") + '.';
 		}

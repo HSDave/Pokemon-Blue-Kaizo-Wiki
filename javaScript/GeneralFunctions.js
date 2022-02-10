@@ -1,4 +1,4 @@
-const defaultCookieTime = 2;
+const defaultCookieTime = 365;
 
 function titleCase(str, separator = [' ']) {
 	var mergedStr = str.toLowerCase();
