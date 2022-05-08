@@ -476,7 +476,7 @@ class C_Attack_List {
 			"Night Shade does damage equal to the user's level. Although Night Shade is a Ghost-type move, its type does" +
 			" not alter the amount of damage it does. Night Shade is not affected by type immunities, so can hit both" +
 			" Normal-type and Psychic-type Pokémon, both of which have immunities to Ghost-type moves during Generation I."),
-		89 : new C_Move("pay day",255/256,40,20,[52],"normal",
+		89 : new C_Move("pay day",255/256,40,20,"normal",[52],
 			"Pay Day does damage and scatters coins on the ground with a value equal to twice the user's level for each time it is used." +
 			" Regardless of who used Pay Day, these coins are picked up afterwards if the player wins the battle." +
 			" No money is obtained if they flee or if the player captures the opponent Pokemon. No coins will be scattered" +

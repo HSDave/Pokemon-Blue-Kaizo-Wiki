@@ -54,8 +54,8 @@ function generateBaseStatTable(pokemon) {
 	var statTable = '<table class="stattbl">';
 	statTable += '<caption>Base Stats</caption>';
 	statTable += 	'<tr>';
-	statTable += 		'<th>Att</th>';
 	statTable += 		'<th>Hp</th>';
+	statTable += 		'<th>Att</th>';
 	statTable += 		'<th>Def</th>';
 	statTable += 		'<th>Spd</th>';
 	statTable += 		'<th>Spc</th>';
