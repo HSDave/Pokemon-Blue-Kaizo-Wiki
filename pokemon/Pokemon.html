@@ -6,7 +6,7 @@
 	<script src="../javaScript/EncounterList.js"></script>
 	<script src="../javaScript/functions.js"></script>
 	<script> var pokemon = titleCase(decodeURI(location.search.substring(1)));</script>
-    <script>document.write('<title>' + pokemon + '</title>');</script>
+    <script> document.write('<title>' + pokemon + '</title>');</script>
 </head>
 <body>
 	<style>
@@ -19,8 +19,8 @@
 	</script>
 	<table class="typetbl">
 		<tr>
-			<td>Type: </td>
-			<script>document.write(generateType(pokemon));</script>
+			<td> Type: </td>
+			<script> document.write(generateType(pokemon));</script>
 		</tr>
 	</table>
 	<div class = "pull-left">
@@ -30,23 +30,23 @@
 		document.write('</a>');
 		</script>
 		<div class="clearfix"></div>
-		<script>document.write(generateBaseStatTable(pokemon));</script>
-		<script>document.write(generateEvolutionInfo(pokemon));</script>
+		<script> document.write(generateBaseStatTable(pokemon));</script>
+		<script> document.write(generateEvolutionInfo(pokemon));</script>
 	</div>
-	<script>document.write(generateMoveTable(pokemon));</script>
+	<script> document.write(generateMoveTable(pokemon));</script>
 	<table class="encountertbl">
-		<caption>Encounter</caption>
+		<caption> Encounter </caption>
 		<tr>
-			<th>Place</th>
-			<th>Level</th>
-			<th>Rate [%]</th>
-			<th>Note</th>
+			<th> Place </th>
+			<th> Level </th>
+			<th> Rate [%] </th>
+			<th> Note </th>
 		</tr>
 		<tr>
-			<td><script>document.write(generateLink('Route 1','../walkthrough/'));</script></td>
-			<td>3</td>
-			<td>15</td>
-			<td>Land</td>
+			<td><script> document.write(generateLink('Route 1','Route 1','../walkthrough/')); </script></td>
+			<td> 3 </td>
+			<td> 15 </td>
+			<td> Land </td>
 		</tr>
 	</table>
 </body>
