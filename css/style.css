@@ -3,6 +3,11 @@ img.pkmnimg {
 	height: 220px;
 }
 
+img.placeimg {
+	width: 400px;
+	height: 400px;
+}
+
 .pull-left{
 	float: left;
 	margin: 10px;

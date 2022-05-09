@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="../javaScript/GeneralFunctions.js"></script>
+	<script src="../javaScript/PokemonList.js"></script>
+	<script src="../javaScript/EncounterList.js"></script>
+	<script src="../javaScript/functions.js"></script>
+	<script> var place = "Pallet Town";</script>
+    <script> document.write('<title>' + place + '</title>'); </script>
+</head>
+<body>
+	<style>
+		@import url("../css/style.css");
+	</style>
+	<script>
+		document.write(generateHeader('../'));
+		document.write('<h2>' + place + '</h2>');
+	</script>
+	<div class = "pull-left">
+		<script>
+		document.write('<a href="../images/' + 'Pallet Town' + '.png" target="_blank" title="' + 'Pallet Town' + '.png">');
+			document.write('<img src="../images/' + 'Pallet Town' + '.png" class="placeimg" alt="' + 'Pallet Town' + '"></img>');
+		document.write('</a>');
+		</script>
+		<div class="clearfix"></div>
+	</div>
+	<script>document.write(generateMoveTable(pokemon));</script>
+	<table class="encountertbl">
+		<caption>Encounter</caption>
+		<tr>
+			<th>Pokemon</th>
+			<th>Level</th>
+			<th>Rate [%]</th>
+			<th>Note</th>
+		</tr>
+		<tr>
+			<td><script>document.write(generateLink('Bulbasaur','Bulbasaur','../pokemon/'));</script></td>
+			<td>5</td>
+			<td>100</td>
+			<td>Gift</td>
+		</tr>
+		<tr>
+			<td><script>document.write(generateLink('Charmander','Charmander','../pokemon/'));</script></td>
+			<td>5</td>
+			<td>100</td>
+			<td>Gift</td>
+		</tr>
+		<tr>
+			<td><script>document.write(generateLink('Squirtle','Squirtle','../pokemon/'));</script></td>
+			<td>5</td>
+			<td>100</td>
+			<td>Gift</td>
+		</tr>
+	</table>
+</body>
+</html>
