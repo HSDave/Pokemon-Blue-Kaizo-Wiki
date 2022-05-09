@@ -12,42 +12,19 @@ function titleCase(str, separator = [' ']) {
 	return mergedStr;
 }
 
-function setCookie(cname, cvalue, exdays, path) {
-	const d = new Date();
-	d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-	let expires = "expires="+d.toUTCString();
-	document.cookie = cname + "=" + cvalue + ";" + expires + ";path=" + path + ";SameSite=Strict";
-}
-
-function getCookie(cname) {
-  let name = cname + "=";
-  let ca = document.cookie.split(';');
-  for(let i = 0; i < ca.length; i++) {
-    let c = ca[i];
-    while (c.charAt(0) == ' ') {
-      c = c.substring(1);
-    }
-    if (c.indexOf(name) == 0) {
-      return c.substring(name.length, c.length);
-    }
-  }
-  return "";
-}
-
 function generateButton(value, content, path = '', btnclass = "pokemon", type = "Pokemon") {
 	value = titleCase(value);
 	type = titleCase(type);
 	var mybutton = '<button class="' + btnclass + '" ';
-	mybutton    += 'onclick="window.location.href = \'' + path + type + '.html\'; ';
-	mybutton    += 'setCookie(\'' + type + '\',\'' + value + '\',' + defaultCookieTime + ',\'' + path + '\');return true;"';
+	mybutton    += 'onclick="window.location.href = \'' + path + type + '.html?' + value + '\';"';
 	mybutton    += ' title="' + value + '">' + titleCase(content,[' ','-']) + '</button>';
+	console.log(mybutton);
 	return mybutton;
 }
 
 function generateLink(type, value, path = '', content = value) {
 	value = titleCase(value);
-	var mylink = '<a href="' + path + type + '.html" ';
-	mylink	  += 'onclick="setCookie(\'' + type + '\',\'' + value + '\',' + defaultCookieTime + ',\'' + path + '\'); return true;" ';
+	var mylink = '<a href="' + path + type + '.html?' + value + '" ';
 	mylink	  += 'title="' + value + '">' + titleCase(content,[' ','-']) + '</a>';
 	return mylink;
 }

@@ -5,7 +5,7 @@
 	<script src="../javaScript/PokemonList.js"></script>
 	<script src="../javaScript/EncounterList.js"></script>
 	<script src="../javaScript/functions.js"></script>
-	<script> var pokemon = titleCase(getCookie("Pokemon"));</script>
+	<script> var pokemon = titleCase(decodeURI(location.search.substring(1)));</script>
     <script>document.write('<title>' + pokemon + '</title>');</script>
 </head>
 <body>
