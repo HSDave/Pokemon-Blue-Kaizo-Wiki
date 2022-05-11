@@ -840,7 +840,7 @@ class C_Evolution {
 		var paraclass = '<p class = "pokemonEvolution">';
 		var info = "";
 		if(preevolution !== null) {
-			info += paraclass + preevolution.m_condition + ' to ' + generateLink("Pokemon", preevolution.m_pokemon, "../pokemon/") + '.';
+			info += paraclass + preevolution.m_condition + ' from ' + generateLink("Pokemon", preevolution.m_pokemon, "../pokemon/") + '.';
 		}
 		if(Array.isArray(evolution)) {
 			for(var i in evolution) {
@@ -896,7 +896,11 @@ class C_Pokemon {
 		var moves;
 		for (var i in this.m_learnset) {
 			if(this.m_learnset[i].isMove(move)) {
-				moves = [...moves, this.m_learnset[i]];
+				if(typeof moves == 'undefined') {
+					moves = this.m_learnset[i]
+				} else {
+					moves = [...moves, this.m_learnset[i]];
+				}
 			}
 		}
 		return moves;
@@ -936,9 +940,6 @@ class C_Pokemon_List {
 		var pokemoves;
 		for(var i in this.m_Pokemon_List) {
 			moves = this.m_Pokemon_List[i].getMoves(move);
-			if(typeof moves !== "undefined") {
-				
-			}
 		}
 		return pokemoves;
 	}
@@ -1796,7 +1797,7 @@ class C_Pokemon_List {
 				new C_MoveReference("waterfall",44),
 				new C_MoveReference("hydro pump",49),
 				new C_MoveReference("rest",50)
-		],  	new C_Evolution(new C_EvolutionEntry(26,"seel"), null), [21,41,42,43,44,45]),
+		],  	new C_Evolution(new C_EvolutionEntry(26,"seel"), null), [21,41,42,44,45]),
 		88 : new C_Pokemon("grimer",[80,80,50,25,40],["poison"],[
 				new C_MoveReference("toxic",1),
 				new C_MoveReference("sludge",1),
@@ -2069,7 +2070,7 @@ class C_Pokemon_List {
 				new C_MoveReference("body slam",36),
 				new C_MoveReference("hyper beam",41),
 				new C_MoveReference("hyper beam",46)
-		],  	new C_Evolution(null, null), [21,33,35,44,45,5,52,53,54]),
+		],  	new C_Evolution(null, null), [21,33,35,44,45,51,52,53,54]),
 		116 : new C_Pokemon("horsea",[30,40,70,60,70],["water"],[
 				new C_MoveReference("toxic",1),
 				new C_MoveReference("bubble beam",1),
@@ -2286,7 +2287,7 @@ class C_Pokemon_List {
 				new C_MoveReference("recover",24),
 				new C_MoveReference("thunderbolt",28),
 				new C_MoveReference("thunder wave",32)
-		],  	new C_Evolution(null, null), [47,48]),
+		],  	new C_Evolution(null, null), [32,51,54]),
 		138 : new C_Pokemon("omanyte",[35,40,100,35,90],["rock","water"],[
 				new C_MoveReference("waterfall",1),
 				new C_MoveReference("blizzard",1),
@@ -2294,7 +2295,7 @@ class C_Pokemon_List {
 				new C_MoveReference("leer",39),
 				new C_MoveReference("spike cannon",46),
 				new C_MoveReference("hydro pump",53)
-		],  	new C_Evolution(null, new C_EvolutionEntry(40,"omastar")), [49]),
+		],  	new C_Evolution(null, new C_EvolutionEntry(40,"omastar")), [47,48]),
 		139 : new C_Pokemon("omastar",[70,60,125,55,115],["rock","water"],[
 				new C_MoveReference("hydro pump",1),
 				new C_MoveReference("blizzard",1),
@@ -2304,7 +2305,7 @@ class C_Pokemon_List {
 				new C_MoveReference("seismic toss",39),
 				new C_MoveReference("seismic toss",44),
 				new C_MoveReference("hydro pump",53)
-		],  	new C_Evolution(new C_EvolutionEntry(40,"omanyte"), null), [47,48]),
+		],  	new C_Evolution(new C_EvolutionEntry(40,"omanyte"), null), [49]),
 		140 : new C_Pokemon("kabuto",[30,80,90,55,45],["rock","water"],[
 				new C_MoveReference("waterfall",1),
 				new C_MoveReference("blizzard",1),
@@ -2314,7 +2315,7 @@ class C_Pokemon_List {
 				new C_MoveReference("leer",44),
 				new C_MoveReference("blizzard",45),
 				new C_MoveReference("hydro pump",49)
-		],  	new C_Evolution(null, new C_EvolutionEntry(40,"kabutops")), [49]),
+		],  	new C_Evolution(null, new C_EvolutionEntry(40,"kabutops")), [47,48]),
 		141 : new C_Pokemon("kabutops",[60,115,105,80,70],["rock","water"],[
 				new C_MoveReference("hydro pump",1),
 				new C_MoveReference("blizzard",1),
@@ -2324,14 +2325,14 @@ class C_Pokemon_List {
 				new C_MoveReference("slash",39),
 				new C_MoveReference("slash",46),
 				new C_MoveReference("hydro pump",53)
-		],  	new C_Evolution(new C_EvolutionEntry(40,"kabuto"), null), [56]),
+		],  	new C_Evolution(new C_EvolutionEntry(40,"kabuto"), null), [49]),
 		142 : new C_Pokemon("aerodactyl",[80,105,65,130,60],["rock","flying"],[
 				new C_MoveReference("fly",1),
 				new C_MoveReference("razor wind",33),
 				new C_MoveReference("earthquake",38),
 				new C_MoveReference("rock Slide",45),
 				new C_MoveReference("sky attack",101)
-		],  	new C_Evolution(null, null), [57]),
+		],  	new C_Evolution(null, null), [56]),
 		143 : new C_Pokemon("snorlax",[160,110,65,30,65],["normal"],[
 				new C_MoveReference("headbutt",1),
 				new C_MoveReference("rest",1),
@@ -2340,7 +2341,7 @@ class C_Pokemon_List {
 				new C_MoveReference("earthquake",41),
 				new C_MoveReference("hyper beam",45),
 				new C_MoveReference("lovely kiss",88)
-		],  	new C_Evolution(null, null), [56]),
+		],  	new C_Evolution(null, null), [57]),
 		144 : new C_Pokemon("articuno",[105,85,100,85,125],["ice","flying"],[
 				new C_MoveReference("sky attack",1),
 				new C_MoveReference("blizzard",1),

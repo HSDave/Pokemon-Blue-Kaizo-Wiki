@@ -1,5 +1,13 @@
 const defaultCookieTime = 365;
 
+function sumArray(arr) {
+	var sum = 0;
+	for(var i = 0; i < arr.length; i++) {
+		sum += arr[i];
+	}
+	return sum;
+}
+
 function titleCase(str, separator = [' ']) {
 	var mergedStr = str.toLowerCase();
 	for (sep in separator) {
@@ -16,7 +24,7 @@ function generateButton(value, content, path = '', btnclass = "pokemon", type = 
 	value = titleCase(value);
 	type = titleCase(type);
 	var mybutton = '<button class="' + btnclass + '" ';
-	mybutton    += 'onclick="window.location.href = \'' + path + type + '.html?' + value + '\';"';
+	mybutton    += 'onclick="window.location.href = \'' + path + type + '.html?' + value.replace(/'/g, "\\\'") + '\';"';
 	mybutton    += ' title="' + value + '">' + titleCase(content,[' ','-']) + '</button>';
 	console.log(mybutton);
 	return mybutton;

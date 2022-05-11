@@ -1,4 +1,3 @@
-
 class C_Encounter {
 	constructor(pokemonid, level, rate, note) {
 		this.m_pokemonid = pokemonid;
@@ -6,12 +5,30 @@ class C_Encounter {
 		this.m_rate = rate;
 		this.m_note = note;
 	}
+	
+	isPokemon(pokemonid) {
+		return this.m_pokemonid == pokemonid;
+	}
 };
 
 class C_Area {
 	constructor(name, encounters) {
 		this.m_name = name;
 		this.m_encounters = encounters;
+	}
+	
+	getEncounter(pokemonid) {
+		var encounter;
+		for(var i in this.m_encounters) {
+			if (this.m_encounters[i].isPokemon(pokemonid)) {
+				if(typeof encounter == 'undefined') {
+					encounter = this.m_encounters[i]
+				} else {
+					encounter = [...encounter, this.m_encounters[i]];
+				}
+			}
+		}
+		return encounter;
 	}
 };
 

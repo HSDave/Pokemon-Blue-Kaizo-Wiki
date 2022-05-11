@@ -125,3 +125,65 @@ function generatePokemonList() {
 	table += '</table>';
 	return table;
 }
+
+function generateEncounterTableEntry(gamearea, pokemonid) {
+	var encounter = gamearea.getEncounter(pokemonid);
+	var name = titleCase(gamearea.m_name,[' ','.']);
+	var fnname = name.replace(/[^a-zA-Z0-9]/g, '');
+	var fn = '';
+	var entry = '<tr>';
+	entry += 	'<td>' + generateLink(name, name, '../walkthrough/') +'</td>';
+	if(encounter.length == undefined) {
+		encounter = [encounter];
+	}
+	for(var j in encounter) {
+		if(encounter[j].m_level.length > 1) {
+			fn += '<script> function updateEncounterRate' + fnname + encounter[j].m_note + '() {';
+			fn += 'var sel = document.getElementsByName(\'' + name + encounter[j].m_note + 'Level\')[0];';
+			fn += 'var encounter = \'' + sumArray(encounter[j].m_rate) + '\';';
+			fn += 'switch (sel.value) {';
+			for(var i in encounter[j].m_level) {
+				fn += 'case \'' + encounter[j].m_level[i] + '\' : encounter = \'' + encounter[j].m_rate[i] + '\'; break;';
+			}
+			fn += '}';
+			fn += 'document.getElementById(\'' + name + encounter[j].m_note + 'Encounter\').innerHTML = encounter;';
+			fn += '}</script>';
+			
+			var lastidx = encounter[j].m_level.length - 1;
+			entry += '<td><select name = "' + name + encounter[j].m_note + 'Level" onChange="updateEncounterRate' + fnname + encounter[j].m_note + '()">';
+			entry += '<option value=\'' + encounter[j].m_level[0] + '-' + encounter[j].m_level[lastidx] + '\'>';
+				entry += encounter[j].m_level[0] + '-' + encounter[j].m_level[lastidx] + '</option>';
+			for(var i in encounter[j].m_level) {
+				entry += '<option value=\'' + encounter[j].m_level[i] + '\'>' + encounter[j].m_level[i] + '</option>';
+			}
+			entry += '</select></td>';
+			entry += '<td id = \'' + name + encounter[j].m_note + 'Encounter\'><script>updateEncounterRate' + fnname + encounter[j].m_note + '()</script></td>';
+		} else {
+			entry += '<td>' + encounter[j].m_level + '</td>';
+			entry += '<td>' + encounter[j].m_rate + '</td>';
+		}
+		entry += '<td>' + encounter[j].m_note + '</td>';
+	}
+	entry += '</tr>';
+	return [entry, fn];
+}
+
+function generateEncounterTable(pokemon) {
+	var fn = '';
+	var table = '<table class="encountertbl">';
+	table +=  	'<caption> Encounter </caption>';
+	table += 	'<tr>';
+	table += 		'<th> Place </th>';
+	table += 		'<th> Level </th>';
+	table += 		'<th> Rate [%] </th>';
+	table += 		'<th> Note </th>';
+	table += 	'</tr>';
+	for (var i in C_Pokemon_List.getEntry(pokemon).m_encounter_id) {
+		var encounter = C_Pokemon_List.getEntry(pokemon).m_encounter_id[i];
+		var tmp = generateEncounterTableEntry(C_Encounter_Table.m_Encounter_Table[encounter], C_Pokemon_List.getIndex(pokemon));
+		table += tmp[0];
+		fn += tmp[1];
+	}
+	table +=	'</table>';
+	return fn + table;
+}

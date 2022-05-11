@@ -33,21 +33,9 @@
 		<script> document.write(generateBaseStatTable(pokemon));</script>
 		<script> document.write(generateEvolutionInfo(pokemon));</script>
 	</div>
-	<script> document.write(generateMoveTable(pokemon));</script>
-	<table class="encountertbl">
-		<caption> Encounter </caption>
-		<tr>
-			<th> Place </th>
-			<th> Level </th>
-			<th> Rate [%] </th>
-			<th> Note </th>
-		</tr>
-		<tr>
-			<td><script> document.write(generateLink('Route 1','Route 1','../walkthrough/')); </script></td>
-			<td> 3 </td>
-			<td> 15 </td>
-			<td> Land </td>
-		</tr>
-	</table>
+	<script>
+		document.write(generateMoveTable(pokemon));
+		document.write(generateEncounterTable(pokemon));
+	</script>
 </body>
 </html>
