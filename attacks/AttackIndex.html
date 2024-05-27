@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="../javaScript/GeneralFunctions.js"></script>
+	<script src="../javaScript/PokemonList.js"></script>
+	<script src="../javaScript/EncounterList.js"></script>
+	<script src="../javaScript/functions.js"></script>
+	<script> var attack = titleCase(decodeURI(location.search.substring(1)));</script>
+    <title>Attack List</title>
+</head>
+<script>
+document.write('<body onload=\' location.href="#' + attack + '" \'>');
+</script>
+	<style>
+		@import url("../css/style.css");
+	</style>
+	<script>document.write(generateHeader('../'));</script>
+	<script>document.write(generateAttackList());</script>
+
+</body>
+</html>

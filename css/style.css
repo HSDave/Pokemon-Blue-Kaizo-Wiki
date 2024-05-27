@@ -133,6 +133,14 @@ table.pkmntbl td{
 	border-collapse: collapse;
 }
 
+table.pkmntbl td.number{
+	padding: 3px;
+	text-align: right;
+	font-size: large;
+	border: 1px solid red;
+	border-collapse: collapse;
+}
+
 table.pkmntbl td.grass, table.movetbl td.grass, table.typetbl td.grass{
 	background-color: green;
 	color: white;

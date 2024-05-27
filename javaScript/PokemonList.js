@@ -37,8 +37,8 @@ class C_Attack_List {
 	static m_Attack_List = {
 		1 : new C_Move("absorb",255/256,20,20,"grass",[1,140],
 			"Absorb does damage, and up to 50% of the damage dealt to the target is restored to the user as HP." +
-			" If this attack does 1 HP of damage, 1 HP will be restored to the user. If Absorb breaks a" +
-			generateLink("Attack","substitute","../attacks/") + ", no HP will be restored to the user. If HP is" +
+			" If this attack does 1 HP of damage, 1 HP will be restored to the user. If Absorb breaks a " +
+			generateLink("AttackIndex","substitute","../attacks/") + ", no HP will be restored to the user. If HP is" +
 			" restored to the user when its current HP would be greater than its maximum HP, its current HP will be" +
 			" set equal to its maximum HP."),
 		2 : new C_Move("acid",255/256,40,30,"poison",[43,88],
@@ -52,8 +52,8 @@ class C_Attack_List {
 			"Barrage does damage, hitting the target 2-5 times per use. There is a 37.5% chance that it will hit 2 times," +
 			" a 37.5% chance that it will hit 3 times, a 12.5% chance that it will hit 4 times, and a 12.5% chance that it will" +
 			" hit 5 times. Although only the first strike can be a critical hit, each successive one will deal the same amount of" +
-			" damage. Barrage will end immediately if it breaks a " + generateLink("Attack","substitute","../attacks/") + ". " +
-			generateLink("Attack","bide","../attacks/") + " and " + generateLink("Attack","counter","../attacks/") + " will only" +
+			" damage. Barrage will end immediately if it breaks a " + generateLink("AttackIndex","substitute","../attacks/") + ". " +
+			generateLink("AttackIndex","bide","../attacks/") + " and " + generateLink("AttackIndex","counter","../attacks/") + " will only" +
 			" acknowledge the last strike of this move."),
 		8 : new C_Move("barrier",255/256,0,30,"psychic",[],"Barrier increases the user's Defense by two stages."),
 		9 : new C_Move("bide",256/256,0,10,"normal",[],
@@ -63,9 +63,9 @@ class C_Attack_List {
 			" fail on the turn it would have released. Although Bide is a Normal-type move, type has no effect on the calculated" +
 			" damage inflicted by this attack, so Bide does neutral damage on Rock and Ghost types and does not receive the" +
 			" same-type attack bonus. Bide bypasses accuracy checks to always hit, even during the semi-invulnerable turn of a move" +
-			" such as " + generateLink("Attack","dig","../attacks/") + ". The damage received during the period is counted as equal" +
+			" such as " + generateLink("AttackIndex","dig","../attacks/") + ". The damage received during the period is counted as equal" +
 			" to the last amount of damage done. The last amount of damage done will include crash damage, an opponent's self-inflicted" +
-			" confusion damage, and the full damage absorbed by a " + generateLink("Attack","substitute","../attacks/") + ". Additionally," +
+			" confusion damage, and the full damage absorbed by a " + generateLink("AttackIndex","substitute","../attacks/") + ". Additionally," +
 			" if the opponent does not use an attack that misses, the last amount of damage done will not be reset, effectively resulting" +
 			" in damage done during the previous turn also being counted as damage done during that turn. Sleep, freeze, partial trap" +
 			" duration, and flinching will pause but not disrupt the duration of Bide."),
@@ -82,12 +82,12 @@ class C_Attack_List {
 			" be used against the incoming Pokémon, deducting an additional PP from the move. If at such a time Bind" +
 			" has 0 PP, Bind will still be used against the incoming Pokémon. After that use, the current PP of Bind" +
 			" will roll over to 63, and full PP Ups will be applied to it. Even if Bind misses, it will negate the" +
-			" recharge turn normally required for " + generateLink("Attack","hyper beam","../attacks/") + ". Additionally," +
-			" if the user of Bind attacks before the user of " + generateLink("Attack","hyper beam","../attacks/") +
-			" during a recharge turn and the use of Bind misses, the user of" + generateLink("Attack","hyper beam","../attacks/") +
-			" will automatically use " + generateLink("Attack","hyper beam","../attacks/") + " during that turn." +
-			" If at such a time " + generateLink("Attack","hyper beam","../attacks/") + " has 0 PP, " +
-			generateLink("Attack","hyper beam","../attacks/") + " will still be used, and afterwards its current PP will" +
+			" recharge turn normally required for " + generateLink("AttackIndex","hyper beam","../attacks/") + ". Additionally," +
+			" if the user of Bind attacks before the user of " + generateLink("AttackIndex","hyper beam","../attacks/") +
+			" during a recharge turn and the use of Bind misses, the user of" + generateLink("AttackIndex","hyper beam","../attacks/") +
+			" will automatically use " + generateLink("AttackIndex","hyper beam","../attacks/") + " during that turn." +
+			" If at such a time " + generateLink("AttackIndex","hyper beam","../attacks/") + " has 0 PP, " +
+			generateLink("AttackIndex","hyper beam","../attacks/") + " will still be used, and afterwards its current PP will" +
 			" roll over to 63, and full PP ups will be applied to it. The target will get to select a move during each" +
 			" turn of Bind's duration, and will attack the player's incoming Pokémon with the selected move if the" +
 			" player decides to switch before the duration is over. Although Bind cannot damage Ghost-type Pokémon," +
@@ -105,11 +105,11 @@ class C_Attack_List {
 			"Body Slam does damage and has a 33% chance of paralyzing the target. It cannot paralyze Normal-type Pokémon."),
 		14 : new C_Move("bone club",216/256,65,20,"ground",[104],
 			"Bone Club does damage and has a 10% chance of causing the target to flinch. Bone Club cannot cause a target with a " +
-			generateLink("Attack","substitute","../attacks/") + " to flinch."),
+			generateLink("AttackIndex","substitute","../attacks/") + " to flinch."),
 		15 : new C_Move("bonemerang",229/256,60,10,"ground",[104,105],
 			"Bonemerang does damage, hitting the target twice per use. Although only the first strike can be a critical hit, the" +
 			" second one will deal the same amount of damage. Bonemerang will end immediately if the first strike breaks a " +
-			generateLink("Attack","substitute","../attacks/") + ". " + generateLink("Attack","bide","../attacks/") + " will only"+
+			generateLink("AttackIndex","substitute","../attacks/") + ". " + generateLink("AttackIndex","bide","../attacks/") + " will only" +
 			" acknowledge the second strike of this move."),
 		16 : new C_Move("bubble",255/256,20,30,"water",[129],
 			"Bubble does damage and has a 33% chance of lowering the target's Speed stat by one stage."),
@@ -128,11 +128,11 @@ class C_Attack_List {
 			" an additional PP from the move. If at such a time Clamp has 0 PP, Clamp will still be used against the incoming" +
 			" Pokémon. After that use, the current PP of Clamp will roll over to 63, and full PP Ups will be applied to it." +
 			" Even if Clamp misses, it will negate the recharge turn normally required for " +
-			+ generateLink("Attack","hyper beam","../attacks/") + ". Additionally, if the user of Clamp attacks before the" +
-			" user of " + generateLink("Attack","hyper beam","../attacks/") + " during a recharge turn and the use of Clamp" +
-			" misses, the user of " + generateLink("Attack","hyper beam","../attacks/") + " will automatically use " +
-			generateLink("Attack","hyper beam","../attacks/") + " during that turn. If at such a time " +
-			generateLink("Attack","hyper beam","../attacks/") + " has 0 PP, " + generateLink("Attack","hyper beam","../attacks/") +
+			+ generateLink("AttackIndex","hyper beam","../attacks/") + ". Additionally, if the user of Clamp attacks before the" +
+			" user of " + generateLink("AttackIndex","hyper beam","../attacks/") + " during a recharge turn and the use of Clamp" +
+			" misses, the user of " + generateLink("AttackIndex","hyper beam","../attacks/") + " will automatically use " +
+			generateLink("AttackIndex","hyper beam","../attacks/") + " during that turn. If at such a time " +
+			generateLink("AttackIndex","hyper beam","../attacks/") + " has 0 PP, " + generateLink("AttackIndex","hyper beam","../attacks/") +
 			" will still be used, and afterwards its current PP will roll over to 63, and full PP ups will roll over to 63," +
 			" and full PP ups will be applied to it. The target will get to select a move during each turn of Clamps duration," +
 			" and will attack the player's incoming Pokémon with the selected move if the player decides to switch before the" +
@@ -143,8 +143,8 @@ class C_Attack_List {
 			" a 12.5% chance that it will hit 4 times, and a 12.5% chance that it will hit 5 times." +
 			" Although only the first strike can be a critical hit, each successive one will deal" +
 			" the same amount of damage. Comet Punch will end immediately if it breaks a " + 
-			generateLink("Attack","substitute","../attacks/") + ". " + generateLink("Attack","bide","../attacks/") +
-			" and " + generateLink("Attack","counter","../attacks/") + " will only acknowledge the last strike of this move."),
+			generateLink("AttackIndex","substitute","../attacks/") + ". " + generateLink("AttackIndex","bide","../attacks/") +
+			" and " + generateLink("AttackIndex","counter","../attacks/") + " will only acknowledge the last strike of this move."),
 		20 : new C_Move("confuse ray",255/256,0,10,"ghost",[37,41,42,92,93,126,131],
 			"Confuse Ray causes the target to become confused."),
 		21 : new C_Move("confusion",255/256,50,25,"psychic",[54,63,79,80,96],
@@ -167,21 +167,21 @@ class C_Attack_List {
 			" speed priority will not be reset. Subsequently, it will only be reset on the turn after the user wakes up or is defrosted," +
 			" or if the user switches out. Counter can cause a critical hit, but the actual amount of damage dealt by it will not be" +
 			" altered by a critical hit. Counter will only counter the last hit of a multi-hit move and the last attack of a partial" +
-			" trapping move. Counter will always miss if called by " + generateLink("Attack","metronome","../attacks/") + ". If both" +
+			" trapping move. Counter will always miss if called by " + generateLink("AttackIndex","metronome","../attacks/") + ". If both" +
 			" active Pokémon use Counter during the same round, both attacks will fail. An attack absorbed by a " +
-			generateLink("Attack","substitute","../attacks/") + " can be countered for the amount of damage it would have done to the" +
-			" user had the user not had a " + generateLink("Attack","substitute","../attacks/") + "."),
+			generateLink("AttackIndex","substitute","../attacks/") + " can be countered for the amount of damage it would have done to the" +
+			" user had the user not had a " + generateLink("AttackIndex","substitute","../attacks/") + "."),
 		25 : new C_Move("crabhammer",229/256,90,10,"water",[98,99],"Crabhammer does damage."),
 		26 : new C_Move("cut",242/256,50,30,"normal",[],"Cut does damage."),
 		27 : new C_Move("defense curl",255/256,0,40,"normal",[],"Defense Curl increases the user's Defense by one stage."),
 		28 : new C_Move("dig",255/256,75,10,"ground",[8,20,27,28,30,32,33,50,51,59,74,75,141],
 			"On the turn that Dig is selected, the user will dig underground and become semi-invulnerable, where the only attacks it" +
-			" cannot avoid are " + generateLink("Attack","bide","../attacks/") + ", " + generateLink("Attack","swift","../attacks/") +
-			", and " + generateLink("Attack","transform","../attacks/") + ". On the following turn, Dig will do damage, PP will be" +
+			" cannot avoid are " + generateLink("AttackIndex","bide","../attacks/") + ", " + generateLink("AttackIndex","swift","../attacks/") +
+			", and " + generateLink("AttackIndex","transform","../attacks/") + ". On the following turn, Dig will do damage, PP will be" +
 			" deducted from it, and it will count as the last move used. Once Dig is selected, the user will not be able to switch out" +
 			" until it is disrupted or fully executed. If Dig is not fully executed, PP will not be deducted from it, and it will not" +
-			" count as the last move used. If the opponent uses " + generateLink("Attack","mirror move","../attacks/") + " during the" +
-			" turn that the user digs underground, " + generateLink("Attack","mirror move","../attacks/") + " will copy the move that" +
+			" count as the last move used. If the opponent uses " + generateLink("AttackIndex","mirror move","../attacks/") + " during the" +
+			" turn that the user digs underground, " + generateLink("AttackIndex","mirror move","../attacks/") + " will copy the move that" +
 			" the user executed immediately before using Dig (or fail if it cannot). Full paralysis and self-inflicted damage due to" +
 			" confusion will disrupt Dig. Additionally, if the user is fully paralyzed during the mostly-invulnerable turn of Dig,"+
 			" the semi-invulnerable part will not be reset until the user switches out or fully executes Dig. Pokémon can be caught" +
@@ -193,46 +193,46 @@ class C_Attack_List {
 			" move's PP, and the target will be unable to use the move until the round after Disable wears off (attempting to select" +
 			" the move will just result in a notice that the move is disabled). Disable will fail if one of the target's moves is already" +
 			" disabled. If the target does manage to select the move (such as if it knows the move twice because of " +
-			generateLink("Attack","mimic","../attacks/") + ", or if the user is faster than the target and disables the attack that" +
+			generateLink("AttackIndex","mimic","../attacks/") + ", or if the user is faster than the target and disables the attack that" +
 			" the target was going to use during that round) and attempts to execute it before the disable duration is over, it will" +
 			" only result in a wasted turn and a message that the move is disabled. Since the check to see if a move is disabled happens" +
 			" after the duration reduction, it is possible to disable the move the target was about to use for only 1 turn and as a result" +
 			" have Disable end immediately, still allowing the target to use said move during that round. It is also possible for the" +
-			" target to still use the disabled move if it is called via " + generateLink("Attack","mirror move","../attacks/") + ".If the" +
-			" target has only one move and that move is successfully disabled, it will use " + generateLink("Attack","struggle","../attacks/") +
+			" target to still use the disabled move if it is called via " + generateLink("AttackIndex","mirror move","../attacks/") + ".If the" +
+			" target has only one move and that move is successfully disabled, it will use " + generateLink("AttackIndex","struggle","../attacks/") +
 			" until it can select its move again. Disable will fail if the target has no PP for any of its moves. Turns spent flinching," +
 			" fast asleep, frozen solid, recharging, or partially trapped will not count towards the Disable duration length. Even if" +
-			" unsuccessful (for any reason), using Disable against a Pokémon using " + generateLink("Attack","rage","../attacks/") +
+			" unsuccessful (for any reason), using Disable against a Pokémon using " + generateLink("AttackIndex","rage","../attacks/") +
 			" will cause its rage to build."),
 		30 : new C_Move("dizzy punch",255/256,70,10,"normal",[],"Dizzy Punch does damage."),
 		31 : new C_Move("double kick",255/256,30,30,"fighting",[29,30,32,33,77,84],
 			"Double Kick does damage, hitting the target twice per use. Although only the first strike" +
 			" can be a critical hit, the second one will deal the same amount of damage. Double Kick will" +
-			" end immediately if the first strike breaks a " + generateLink("Attack","substitute","../attacks/") +
-			". " + generateLink("Attack","bide","../attacks/") + " and " + generateLink("Attack","counter","../attacks/") +
+			" end immediately if the first strike breaks a " + generateLink("AttackIndex","substitute","../attacks/") +
+			". " + generateLink("AttackIndex","bide","../attacks/") + " and " + generateLink("AttackIndex","counter","../attacks/") +
 			" will only acknowledge the second strike of this move."),
-		32 : new C_Move("double slap",216,0/256,15,10,"normal",[],
+		32 : new C_Move("double slap",216/256,15,10,"normal",[],
 			"Double Slap does damage, hitting the target 2-5 times per use." +
 			" There is a 37.5% chance that it will hit 2 times, a 37.5% chance that it will hit 3 times," +
 			" a 12.5% chance that it will hit 4 times, and a 12.5% chance that it will hit 5 times." +
 			" Although only the first strike can be a critical hit, each successive one will deal" +
 			" the same amount of damage. Double Slap will end immediately if it breaks a " + 
-			generateLink("Attack","substitute","../attacks/") + ". " + generateLink("Attack","bide","../attacks/") +
-			" and " + generateLink("Attack","counter","../attacks/") + " will only acknowledge the last strike of this move."),
+			generateLink("AttackIndex","substitute","../attacks/") + ". " + generateLink("AttackIndex","bide","../attacks/") +
+			" and " + generateLink("AttackIndex","counter","../attacks/") + " will only acknowledge the last strike of this move."),
 		33 : new C_Move("double team",255/256,0,1,"normal",[3,82],"Double Team increases the user's evasion by one stage."),
 		34 : new C_Move("double-edge",255/256,100,15,"normal",[1,35,37,39,40,56,58,69,77,81,82,104,111,120,133,147],
 			"Double-Edge does damage, and the user receives recoil damage equal to &frac14; of the damage done to the target." +
 			" If the user of Double-Edge attacks first and faints due to recoil damage, the opponent will not attack or be subjected" +
 			" to recurrent damage during that round. Self-inflicted recoil damage from Double-Edge from the previous turn can" +
 			" be countered if the opponent does not make a move on the following turn. If Double-Edge breaks a " + 
-			generateLink("Attack","substitute","../attacks/") + ", the user will take no recoil damage."),
+			generateLink("AttackIndex","substitute","../attacks/") + ", the user will take no recoil damage."),
 		35 : new C_Move("dragon rage",255/256,1,10,"dragon",[5,117,130,131,147,148],
 			"Dragon Rage always does exactly 40 HP damage if it hits. It has no secondary effects" +
 			" and does not take weaknesses or resistances into account."),
 		36 : new C_Move("dream eater",255/256,100,15,"psychic",[],
 			"Dream Eater only works if the target is asleep. Dream Eater does damage, and up to 50% of the damage dealt to the target" +
 			" is restored to the user as HP. If this attack does 1 HP of damage, 1 HP will be restored to the user. If Dream Eater breaks a " +
-			generateLink("Attack","substitute","../attacks/") + ", no HP will be restored to the user. If HP is restored to the user when" +
+			generateLink("AttackIndex","substitute","../attacks/") + ", no HP will be restored to the user. If HP is restored to the user when" +
 			" its current HP is greater than its maximum HP, its current HP will be set equal to its maximum HP. Dream Eater always does" +
 			" nothing if the target is not asleep."),
 		37 : new C_Move("drill peck",255/256,80,20,"flying",[21,22,84,85,145],"Drill Peck does damage."),
@@ -245,10 +245,10 @@ class C_Attack_List {
 			"Explosion does damage and causes the user to faint. Though its power is listed as 170, the target's Defense" +
 			" will be halved during damage calculation (unless it is at a value of 1), effectively doubling the power to 340. The" +
 			" user of Explosion will faint even if the attack misses or the opponent is immune to it (due to being Ghost type)." +
-			" If Explosion breaks a target's " + generateLink("Attack","substitute","../attacks/") + ", the user will not faint," +
+			" If Explosion breaks a target's " + generateLink("AttackIndex","substitute","../attacks/") + ", the user will not faint," +
 			" though its image will be replaced by a blank image. Additionally, if the user of Explosion had a " +
-			generateLink("Attack","substitute","../attacks/") + " at the time of such a situation, uses " +
-			generateLink("Attack","substitute","../attacks/") + " later, or switches out, its regular image will once again become" +
+			generateLink("AttackIndex","substitute","../attacks/") + " at the time of such a situation, uses " +
+			generateLink("AttackIndex","substitute","../attacks/") + " later, or switches out, its regular image will once again become" +
 			" visible. If the user of Explosion attacks first and faints itself, the opponent will not attack or be subjected to" +
 			" recurrent damage during that round."),
 		42 : new C_Move("fire blast",216/256,120,5,"fire",[6,58,59,110,126,136,146],
@@ -268,18 +268,18 @@ class C_Attack_List {
 			" an additional PP from the move. If at such a time Fire Spin has 0 PP, Fire Spin will still be used against the incoming" +
 			" Pokémon. After that use, the current PP of Fire Spin will roll over to 63, and full PP Ups will be applied to it." +
 			" Even if Fire Spin misses, it will negate the recharge turn normally required for " +
-			+ generateLink("Attack","hyper beam","../attacks/") + ". Additionally, if the user of Fire Spin attacks before the" +
-			" user of " + generateLink("Attack","hyper beam","../attacks/") + " during a recharge turn and the use of Fire Spin" +
-			" misses, the user of " + generateLink("Attack","hyper beam","../attacks/") + " will automatically use " +
-			generateLink("Attack","hyper beam","../attacks/") + " during that turn. If at such a time " +
-			generateLink("Attack","hyper beam","../attacks/") + " has 0 PP, " + generateLink("Attack","hyper beam","../attacks/") +
+			+ generateLink("AttackIndex","hyper beam","../attacks/") + ". Additionally, if the user of Fire Spin attacks before the" +
+			" user of " + generateLink("AttackIndex","hyper beam","../attacks/") + " during a recharge turn and the use of Fire Spin" +
+			" misses, the user of " + generateLink("AttackIndex","hyper beam","../attacks/") + " will automatically use " +
+			generateLink("AttackIndex","hyper beam","../attacks/") + " during that turn. If at such a time " +
+			generateLink("AttackIndex","hyper beam","../attacks/") + " has 0 PP, " + generateLink("AttackIndex","hyper beam","../attacks/") +
 			" will still be used, and afterwards its current PP will roll over to 63, and full PP ups will roll over to 63," +
 			" and full PP ups will be applied to it. Fire Spin cannot thaw a frozen target. The target will get to select a move" +
 			" during each turn of Fire Spins duration, and will attack the player's incoming Pokémon with the selected move if" +
 			" the player decides to switch before the duration is over."),
 		45 : new C_Move("fissure",76/256,1,1,"ground",[24,51],
 			"Fissure always does exactly 65535 HP damage if it hits. Fissure will break a " +
-			generateLink("Attack","substitute","../attacks/") + " if it hits. Unlike other moves that skip the damage formula," +
+			generateLink("AttackIndex","substitute","../attacks/") + " if it hits. Unlike other moves that skip the damage formula," +
 			" Fissure does not bypass type immunities. Fissure will not affect a target whose current Speed stat is greater than" +
 			" the user's current Speed stat."),
 		46 : new C_Move("flamethrower",255/256,95,15,"fire",[4,5,6,37,58,77],
@@ -288,21 +288,21 @@ class C_Attack_List {
 		48 : new C_Move("fly",255/256,60,15,"flying",[142],"Fly does damage."),
 		49 : new C_Move("focus energy",255/256,0,30,"normal",[19],
 			"Focus Energy divides the users critical hit ratio by four. Focus Energy will be removed by switching or " +
-			generateLink("Attack","haze","../attacks/") + ". The effect of Focus Energy cannot stack, and it will fail" +
+			generateLink("AttackIndex","haze","../attacks/") + ". The effect of Focus Energy cannot stack, and it will fail" +
 			" if the user is already under its effect."),
 		50 : new C_Move("fury attack",216/256,15,20,"normal",[21],
 			"Fury Attack does damage, hitting the target 2-5 times per use. There is a 37.5% chance that it will hit 2 times," +
 			" a 37.5% chance that it will hit 3 times, a 12.5% chance that it will hit 4 times, and a 12.5% chance that it will" +
 			" hit 5 times. Although only the first strike can be a critical hit, each successive one will deal the same amount of" +
-			" damage. Fury Attack will end immediately if it breaks a " + generateLink("Attack","substitute","../attacks/") + ". " +
-			generateLink("Attack","bide","../attacks/") + " and " + generateLink("Attack","counter","../attacks/") + " will only" +
+			" damage. Fury Attack will end immediately if it breaks a " + generateLink("AttackIndex","substitute","../attacks/") + ". " +
+			generateLink("AttackIndex","bide","../attacks/") + " and " + generateLink("AttackIndex","counter","../attacks/") + " will only" +
 			" acknowledge the last strike of this move."),
 		51 : new C_Move("fury swipes",204/256,18,15,"normal",[],
 			"Fury Swipes does damage, hitting the target 2-5 times per use. There is a 37.5% chance that it will hit 2 times," +
 			" a 37.5% chance that it will hit 3 times, a 12.5% chance that it will hit 4 times, and a 12.5% chance that it will" +
 			" hit 5 times. Although only the first strike can be a critical hit, each successive one will deal the same amount of" +
-			" damage. Fury Swipes will end immediately if it breaks a " + generateLink("Attack","substitute","../attacks/") + ". " +
-			generateLink("Attack","bide","../attacks/") + " and " + generateLink("Attack","counter","../attacks/") + " will only" +
+			" damage. Fury Swipes will end immediately if it breaks a " + generateLink("AttackIndex","substitute","../attacks/") + ". " +
+			generateLink("AttackIndex","bide","../attacks/") + " and " + generateLink("AttackIndex","counter","../attacks/") + " will only" +
 			" acknowledge the last strike of this move."),
 		52 : new C_Move("glare",229/256,0,30,"normal",[23,24],
 			"Glare paralyzes the target. It has an accuracy of 75%. It can hit Ghost-type Pokémon."),
@@ -312,22 +312,22 @@ class C_Attack_List {
 			"Growth increases the user's Special stat by one stage."),
 		55 : new C_Move("guillotine",76/256,1,1,"normal",[99,127],
 			"Guillotine always does exactly 65535 HP damage if it hits. Guillotine will break a " +
-			generateLink("Attack","substitute","../attacks/") + " if it hits. Unlike other moves that skip the damage formula," +
+			generateLink("AttackIndex","substitute","../attacks/") + " if it hits. Unlike other moves that skip the damage formula," +
 			" Guillotine does not bypass type immunities. Guillotine will not affect a target whose current Speed stat is greater" +
 			" than the user's current Speed stat."),
 		56 : new C_Move("gust",255/256,40,35,"normal",[],"Gust does damage."),
 		57 : new C_Move("harden",255/256,0,30,"normal",[11,14],"Harden increases the user's Defense stat by one stage."),
 		58 : new C_Move("haze",255/256,0,30,"ice",[],
 			"Haze resets the stat stages of both active Pokémon to 0 and removes the stat reductions due to burns and paralysis." +
-			"It also lifts the effects of " + generateLink("Attack","focus energy","../attacks/") + ", " +
-			generateLink("Attack","mist","../attacks/") + ", " + generateLink("Attack","leech seed","../attacks/") + ", " +
-			generateLink("Attack","disable","../attacks/") + ", " + generateLink("Attack","reflect","../attacks/") + " and " +
-			generateLink("Attack","light screen","../attacks/") + " from both sides of the field. Additionally, Haze cures confusion" +
+			"It also lifts the effects of " + generateLink("AttackIndex","focus energy","../attacks/") + ", " +
+			generateLink("AttackIndex","mist","../attacks/") + ", " + generateLink("AttackIndex","leech seed","../attacks/") + ", " +
+			generateLink("AttackIndex","disable","../attacks/") + ", " + generateLink("AttackIndex","reflect","../attacks/") + " and " +
+			generateLink("AttackIndex","light screen","../attacks/") + " from both sides of the field. Additionally, Haze cures confusion" +
 			" and turns bad poison into regular poison for both active Pokémon, and also removes any non-volatile status condition" +
 			" from the opponent. Haze does not remove any non-volatile status ailments that the user has, does not change the" +
 			" generic Minimize graphic back to the Pokémon's regular image, and does not reset either Pokémon's current type, moves," +
 			" or species. If a frozen or sleeping opponent has its status removed via Haze, it cannot make a move in the same turn." +
-			" If a frozen Pokémon that has not recharged from " + generateLink("Attack","hyper beam","../attacks/") + " has its freeze" +
+			" If a frozen Pokémon that has not recharged from " + generateLink("AttackIndex","hyper beam","../attacks/") + " has its freeze" +
 			" status eliminated via Haze, it will remain unable to attack, switch, or do anything else, and nothing will then be able to" +
 			" change this until it faints or is forcefully switched out."),
 		59 : new C_Move("headbutt",255/256,70,15,"normal",[1,4,7,25,79,86,104,143,147],
@@ -338,7 +338,7 @@ class C_Attack_List {
 			" target will not attack or be subjected to recurrent damage during that round."),
 		62 : new C_Move("horn drill",76/256,1,1,"normal",[78,87,118,119],
 			"Horn Drill always does exactly 65535 HP damage if it hits. Horn Drill will break a " +
-			generateLink("Attack","substitute","../attacks/") + " if it hits. Unlike other moves that skip the damage formula, Horn Drill" +
+			generateLink("AttackIndex","substitute","../attacks/") + " if it hits. Unlike other moves that skip the damage formula, Horn Drill" +
 			" does not bypass type immunities. Horn Drill will not affect a target whose current Speed stat is greater than the user's" +
 			" current Speed stat."),
 		63 : new C_Move("hydro pump",204/256,120,5,"water",[7,8,9,55,60,61,62,72,87,116,117,120,130,134,138,139,140,141],
@@ -346,7 +346,7 @@ class C_Attack_List {
 		64 : new C_Move("hyper beam",229/256,150,5,"normal",[18,20,22,85,108,115,128,143,147,148],
 			"Hyper Beam does damage. A recharge turn is required on the turn after damage is done, during which no action" +
 			" may be performed. Hyper Beam will not require a recharge turn if it misses, it breaks a " + 
-			generateLink("Attack","substitute","../attacks/") + ", it knocks out the target, the user is targeted by a" +
+			generateLink("AttackIndex","substitute","../attacks/") + ", it knocks out the target, the user is targeted by a" +
 			" binding move (even if it misses), the user flinches, or the user is put to sleep after the attack but before the" +
 			" recharge turn. However, freeze does not prevent the need for the recharge turn of Hyper Beam. If the user is" +
 			" confused, the recharge turn of Hyper Beam will not count towards the number of turns the user will remain confused." +
@@ -357,7 +357,7 @@ class C_Attack_List {
 			" in which case it will recharge the turn after."),
 		65 : new C_Move("hyper fang",229/256,80,15,"normal",[19],"Hyper Fang does damage and has a 10% chance of causing the target to flinch."),
 		66 : new C_Move("hypnosis",178/256,0,20,"psychic",[41,42,52,53,54,55,60,61,77,78,92,93,94,96,97,102,122],
-			"Hypnosis puts the target to sleep. Hypnosis can affect a target behind a " + generateLink("Attack","substitute","../attacks/") + "."),
+			"Hypnosis puts the target to sleep. Hypnosis can affect a target behind a " + generateLink("AttackIndex","substitute","../attacks/") + "."),
 		67 : new C_Move("ice beam",255/256,95,10,"ice",[62,86,87,90,113,134],
 			"Ice Beam does damage and has a 10% chance of freezing the target."),
 		68 : new C_Move("ice punch",255/256,75,15,"ice",[125],
@@ -374,7 +374,7 @@ class C_Attack_List {
 		72 : new C_Move("leech life",255/256,20,15,"bug",[46],
 			"Leech Life does damage, and up to 50% of the damage dealt to the target is restored to the user as HP." +
 			" If this attack does 1 HP of damage, 1 HP will be restored to the user. If Leech Life breaks a" +
-			generateLink("Attack","substitute","../attacks/") + ", no HP will be restored to the user. If HP is" +
+			generateLink("AttackIndex","substitute","../attacks/") + ", no HP will be restored to the user. If HP is" +
 			" restored to the user when its current HP would be greater than its maximum HP, its current HP will be" +
 			" set equal to its maximum HP."),
 		73 : new C_Move("leech seed",229/256,0,10,"grass",[],
@@ -384,13 +384,13 @@ class C_Attack_List {
 			" seeded Pokémon defeats the target. Unlike other types of damage, the recurrent damage done by Leech Seed can exceed the" +
 			" target's current HP. Leech Seed will not work against Grass-type Pokémon, and attempts to seed an already-seeded Pokémon" +
 			" will fail. Leech Seed draining will occur even if the seeded Pokémon knocks itself out with crash damage, recoil damage," +
-			" or self-inflicted confusion damage, or by making a " + generateLink("Attack","substitute","../attacks/") + " before the end" +
+			" or self-inflicted confusion damage, or by making a " + generateLink("AttackIndex","substitute","../attacks/") + " before the end" +
 			" of its turn. Draining from Leech Seed is done after continuing partial trapping damage and recurrent poison or burn damage." +
-			" Leech Seed can be removed by " + generateLink("Attack","haze","../attacks/") + " or switching. If the target is seeded during" +
+			" Leech Seed can be removed by " + generateLink("AttackIndex","haze","../attacks/") + " or switching. If the target is seeded during" +
 			" a round that it switches in, it will take recurrent damage during that round, but only if its speed is less than or equal to" +
-			" the user's speed. If the target of Leech Seed is also under the effect of " + generateLink("Attack","toxic","../attacks/") +
-			" (or was under that effect and healed itself with Rest), because Leech Seed and " + generateLink("Attack","toxic","../attacks/") +
-			" both use the same damage algorithm, Leech Seed damage will be affected by " + generateLink("Attack","substitute","../attacks/") +
+			" the user's speed. If the target of Leech Seed is also under the effect of " + generateLink("AttackIndex","toxic","../attacks/") +
+			" (or was under that effect and healed itself with Rest), because Leech Seed and " + generateLink("AttackIndex","toxic","../attacks/") +
+			" both use the same damage algorithm, Leech Seed damage will be affected by " + generateLink("AttackIndex","substitute","../attacks/") +
 			"'s N parameter, and will increase each turn."),
 		74 : new C_Move("leer",255/256,0,30,"normal",[21,138,140],
 			"Leer decreases the Defense stat of the opponent by one stage."),
@@ -400,51 +400,51 @@ class C_Attack_List {
 			"Light Screen doubles the user's Special when the opponent damages the user with a special move. Light Screen will fail if the" +
 			" user is already under its effect. The effect of Light Screen is ignored by critical hits. If Light Screen causes the user's" +
 			" special to reach 1024 or higher at any time during battle calculations, it will be reduced by mod 1024. The effects of Light" +
-			" Screen can be lifted by " + generateLink("Attack","haze","../attacks/") + "."),
+			" Screen can be lifted by " + generateLink("AttackIndex","haze","../attacks/") + "."),
 		77 : new C_Move("lovely kiss",229/256,0,10,"normal",[31,34,62,71,124,143],"Lovely Kiss causes the target to fall asleep."),
 		78 : new C_Move("low kick",229/256,50,20,"fighting",[56,66,67],
 			"Low Kick does damage and has a 33% chance of causing the target to flinch. Low Kick cannot make a target with a " +
-			generateLink("Attack","substitute","../attacks/") + " flinch."),
+			generateLink("AttackIndex","substitute","../attacks/") + " flinch."),
 		79 : new C_Move("meditate",255/256,0,40,"psychic",[],
 			"Meditate increases the user's Attack by one stage."),
 		80 : new C_Move("mega drain",255/256,40,10,"grass",[42,43,46,47,69,70],
 			"Mega Drain does damage, and up to 50% of the damage dealt to the target is restored to the user as HP." +
 			" If this attack does 1 HP of damage, 1 HP will be restored to the user. If Mega Drain breaks a" +
-			generateLink("Attack","substitute","../attacks/") + ", no HP will be restored to the user. If HP is" +
+			generateLink("AttackIndex","substitute","../attacks/") + ", no HP will be restored to the user. If HP is" +
 			" restored to the user when its current HP would be greater than its maximum HP, its current HP will be" +
 			" set equal to its maximum HP."),
 		81 : new C_Move("mega kick",191/256,120,5,"normal",[],"Mega Kick does damage."),
 		82 : new C_Move("mega punch",216/256,80,20,"normal",[],"Mega Punch does damage."),
 		83 : new C_Move("metronome",255/256,0,10,"normal",[35],
 			"Metronome randomly selects a move and fully executes the attack. An attack called by Metronome in this way counts as the" +
-			" last move used. If Metronome successfully calls " + generateLink("Attack","hyper beam","../attacks/") + " or a partial" +
+			" last move used. If Metronome successfully calls " + generateLink("AttackIndex","hyper beam","../attacks/") + " or a partial" +
 			" trapping move and has 0 PP before the move fully executes, its PP can roll over in the same manner as the move is called," +
 			" with full PP Ups applied. A Pokémon will be able to use a move that is disabled if called via Metronome. Because Metronome" +
 			" has normal move priority, a move with higher or lower priority may be executed other than when it normally would. For instance," +
-			" Metronome may cause " + generateLink("Attack","quick attack","../attacks/") + " to be used after a normal priority move or " +
-			generateLink("Attack","roar","../attacks/") + " to be used before a normal priority move."),
+			" Metronome may cause " + generateLink("AttackIndex","quick attack","../attacks/") + " to be used after a normal priority move or " +
+			generateLink("AttackIndex","roar","../attacks/") + " to be used before a normal priority move."),
 		84 : new C_Move("mimic",255/256,0,10,"normal",[],
 			"In battles against a non-player character or wild Pokémon, Mimic allows the user to see the target's moveset" +
 			" and select one of its moves to copy. The user will retain the copied attack in Mimic's place until it faints" +
 			" , is switched out or the battle ends. Mimic can copy all selectable moves, including the opponent's Mimic, " +
-			generateLink("Attack","transform","../attacks/") + ", and " + generateLink("Attack","metronome","../attacks/") +
+			generateLink("AttackIndex","transform","../attacks/") + ", and " + generateLink("AttackIndex","metronome","../attacks/") +
 			", as well as any move that the user already knows. However, Mimic can't copy " +
-			generateLink("Attack","struggle","../attacks/") + " because it is not a normally selectable move. The copied move" +
+			generateLink("AttackIndex","struggle","../attacks/") + " because it is not a normally selectable move. The copied move" +
 			" will use Mimic's PP (therefore, Mimic itself loses PP whenever a move copied by Mimic is used). If a Pokémon" +
-			" uses Mimic as a result of " + generateLink("Attack","mirror move","../attacks/") + " or " +
-			generateLink("Attack","metronome","../attacks/") + ", then the copied move will use the PP of the move that called" +
-			" it. If the player uses any PP-healing items, they will heal up to Mimic's (or " + generateLink("Attack","mirror move","../attacks/") +
-			"'s, or Metronome's) maximum PP. If a Pokémon uses Mimic which was acquired from " + generateLink("Attack","transform","../attacks/") +
-			" (or if a Pokémon uses Mimic as a result of " + generateLink("Attack","mirror move","../attacks/") + " or " +
-			generateLink("Attack","metronome","../attacks/") + " acquired from " + generateLink("Attack","transform","../attacks/") +
+			" uses Mimic as a result of " + generateLink("AttackIndex","mirror move","../attacks/") + " or " +
+			generateLink("AttackIndex","metronome","../attacks/") + ", then the copied move will use the PP of the move that called" +
+			" it. If the player uses any PP-healing items, they will heal up to Mimic's (or " + generateLink("AttackIndex","mirror move","../attacks/") +
+			"'s, or Metronome's) maximum PP. If a Pokémon uses Mimic which was acquired from " + generateLink("AttackIndex","transform","../attacks/") +
+			" (or if a Pokémon uses Mimic as a result of " + generateLink("AttackIndex","mirror move","../attacks/") + " or " +
+			generateLink("AttackIndex","metronome","../attacks/") + " acquired from " + generateLink("AttackIndex","transform","../attacks/") +
 			"), then the 5 PP that is given by Transform will be used for the copied move as well, instead of using the Pokémon's own" +
 			" PP. In the list of moves, the maximum PP displayed is taken from the copied move, even though this value is not used" +
-			" in battle. If Mimic (as well as " + generateLink("Attack","mirror move","../attacks/") + " or " +
-			generateLink("Attack","metronome","../attacks/") + ") has its PP increased by any PP Ups, this unused maximum PP displayed" +
-			" is affected by the PP Ups. For instance, if Mimic copies " + generateLink("Attack","tackle","../attacks/") + " and currently" +
-			" has 9 PP, this can be displayed as \"" + generateLink("Attack","tackle","../attacks/") + " 9/35\" (where \"35\" is" +
-			generateLink("Attack","tackle","../attacks/") + "'s maximum PP, with no PP Ups), or possibly \"" +
-			generateLink("Attack","tackle","../attacks/") + " 9/56\" (if three PP Ups have been used on Mimic). However, the true" +
+			" in battle. If Mimic (as well as " + generateLink("AttackIndex","mirror move","../attacks/") + " or " +
+			generateLink("AttackIndex","metronome","../attacks/") + ") has its PP increased by any PP Ups, this unused maximum PP displayed" +
+			" is affected by the PP Ups. For instance, if Mimic copies " + generateLink("AttackIndex","tackle","../attacks/") + " and currently" +
+			" has 9 PP, this can be displayed as \"" + generateLink("AttackIndex","tackle","../attacks/") + " 9/35\" (where \"35\" is" +
+			generateLink("AttackIndex","tackle","../attacks/") + "'s maximum PP, with no PP Ups), or possibly \"" +
+			generateLink("AttackIndex","tackle","../attacks/") + " 9/56\" (if three PP Ups have been used on Mimic). However, the true" +
 			" maximum PP usable in battle is Mimic's PP as displayed in the summary screen, not the maximum PP displayed in the list" +
 			" of moves. If a Pokémon that used Mimic levels up in battle and learns a new move, Mimic's effect is reverted. The move" +
 			" copied by Mimic is lost, and Mimic will be usable again. If Mimic copies a partial trapping move, and if the target" +
@@ -467,10 +467,10 @@ class C_Attack_List {
 				" that is disabled if it is called via Mirror Move."),
 		87 : new C_Move("mist",255/256,0,30,"ice",[],
 			"Mist protects the user from having its stats decreased by opponents' status moves until the user switches out." +
-			" Damaging moves that lower the target's stats as a side effect, such as " + generateLink("Attack","acid","../attacks/") +
-			" or " + generateLink("Attack","psychic","../attacks/") + ", can still decrease the Pokémon's stats. Mist does not" +
+			" Damaging moves that lower the target's stats as a side effect, such as " + generateLink("AttackIndex","acid","../attacks/") +
+			" or " + generateLink("AttackIndex","psychic","../attacks/") + ", can still decrease the Pokémon's stats. Mist does not" +
 			" remove any stat stage changes already in effect, and it does not prevent the user from lowering their own stats." +
-			" The effect of Mist can be removed by " + generateLink("Attack","haze","../attacks/") + ". Mist will fail if it is" +
+			" The effect of Mist can be removed by " + generateLink("AttackIndex","haze","../attacks/") + ". Mist will fail if it is" +
 			" already under effect. Mist does not stack with the effect of " + generateLink("Item","guard spec","../items/") + "."),
 		88 : new C_Move("night shade",255/256,1,15,"ghost",[92,93,94],
 			"Night Shade does damage equal to the user's level. Although Night Shade is a Ghost-type move, its type does" +
@@ -480,20 +480,20 @@ class C_Attack_List {
 			"Pay Day does damage and scatters coins on the ground with a value equal to twice the user's level for each time it is used." +
 			" Regardless of who used Pay Day, these coins are picked up afterwards if the player wins the battle." +
 			" No money is obtained if they flee or if the player captures the opponent Pokemon. No coins will be scattered" +
-			" if Pay Day breaks a " + generateLink("Attack","substitute","../attacks/") + "."),
+			" if Pay Day breaks a " + generateLink("AttackIndex","substitute","../attacks/") + "."),
 		90 : new C_Move("peck",255/256,35,35,"flying",[21,84,118],"Peck does damage."),
 		91 : new C_Move("petal dance",255/256,120,5,"grass",[43,44,45],
 			"Petal Dance does damage, and up to 50% of the damage dealt to the target is restored to the user as HP." +
 			" If this attack does 1 HP of damage, 1 HP will be restored to the user. If Petal Dance breaks a" +
-			generateLink("Attack","substitute","../attacks/") + ", no HP will be restored to the user. If HP is" +
+			generateLink("AttackIndex","substitute","../attacks/") + ", no HP will be restored to the user. If HP is" +
 			" restored to the user when its current HP would be greater than its maximum HP, its current HP will be" +
 			" set equal to its maximum HP."),
 		92 : new C_Move("pin missile",216/256,14,20,"bug",[15,135],
 			"Pin Missile does damage, hitting the target 2-5 times per use. There is a 37.5% chance that it will hit 2 times," +
 			" a 37.5% chance that it will hit 3 times, a 12.5% chance that it will hit 4 times, and a 12.5% chance that it will hit 5" +
 			" times. Although only the first strike can be a critical hit, each successive one will deal the same amount of damage." +
-			" Pin Missile will end immediately if it breaks a " + generateLink("Attack","substitute","../attacks/") + ". " +
-			generateLink("Attack","bide","../attacks/") + " and " + generateLink("Attack","counter","../attacks/") + " will only" +
+			" Pin Missile will end immediately if it breaks a " + generateLink("AttackIndex","substitute","../attacks/") + ". " +
+			generateLink("AttackIndex","bide","../attacks/") + " and " + generateLink("AttackIndex","counter","../attacks/") + " will only" +
 			" acknowledge the last strike of this move. "),
 		93 : new C_Move("poison gas",140/256,0,40,"poison",[],"Poison Gas poisons the target."),
 		94 : new C_Move("poison powder",191/256,0,35,"poison",[1],
@@ -503,7 +503,7 @@ class C_Attack_List {
 		96 : new C_Move("pound",255/256,40,35,"normal",[151],"Pound does damage."),
 		97 : new C_Move("psybeam",255/256,65,20,"psychic",[12,48,54,64,102,122,137],
 			"Psybeam does damage and has a 10% chance of confusing the target."),
-		98 : new C_Move("psychic",255/256,90,10,"psychic",[36,40,48,49,55,64,65,79,80,93,94,96,97102,103,122,124,125,150,151],
+		98 : new C_Move("psychic",255/256,90,10,"psychic",[36,40,48,49,55,64,65,79,80,93,94,96,97,102,103,122,124,125,150,151],
 			"Psychic does damage and has a 33% chance of lowering the target's Special by one stage."),
 		99 : new C_Move("psywave",204/256,1,15,"psychic",[],
 			"Psywave does a random amount of damage, varying between 1 damage and 1.5× the user's level."),
@@ -515,7 +515,7 @@ class C_Attack_List {
 		101 : new C_Move("rage",255/256,20,20,"normal",[],
 			"Rage does damage and it will not be possible for the player to do anything other than let the user continue to" +
 			" use Rage, and it will not stop using Rage until it faints or the battle ends. Every time the user is damaged by" +
-			" an attack or is targeted by " + generateLink("Attack","disable","../attacks/") + ", its rage will build, causing" +
+			" an attack or is targeted by " + generateLink("AttackIndex","disable","../attacks/") + ", its rage will build, causing" +
 			" its Attack stat to increase by one stage. Being hit by a multi-hit move will raise the user's Attack once for each" +
 			" hit. Rage will use 1 PP when selected, but not use any PP on any subsequent turns. If Rage misses during the turn" +
 			" it is selected, its secondary effects will not activate. If Rage misses due to the 99.6% accuracy bug of 100%-accuracy" +
@@ -536,18 +536,18 @@ class C_Attack_List {
 			"Reflect doubles the user's Defense when the opponent damages the user with a physical move. Reflect will fail if the user" +
 			" is already under its effect. The effect of Reflect is ignored by self-inflicted confusion damage and critical hits. If" +
 			" Reflect causes the user's defense to reach 1024 or higher at any time during battle calculations, it will be reduced mod" +
-			" 1024. The effects of Reflect can be lifted by " + generateLink("Attack","haze","../attacks/") + ". If the opponent has" +
+			" 1024. The effects of Reflect can be lifted by " + generateLink("AttackIndex","haze","../attacks/") + ". If the opponent has" +
 			" Reflect, this lowers the user's confusion damage."),
 		106 : new C_Move("rest",255/256,0,10,"psychic",[39,86,87,143],
 			"Rest causes the user to fall asleep, restoring its HP to its maximum amount and replacing any existing non-volatile status" +
 			" condition. The user will then be asleep for two turns, waking up on the second. Rest will fail if the user has full HP. A" +
 			" glitch causes the stat reductions associated with paralysis and burn to remain despite the fact that the Pokémon no longer" +
 			" has that status, though this can be alleviated by switching out. If a Pokémon that has been badly poisoned by " +
-			generateLink("Attack","tpxic","../attacks/") + " successfully uses Rest, it will be cured of poison, but " +
-			generateLink("Attack","toxic","../attacks/") + "'s counter is not reset; if it then suffers burn, " +
-			generateLink("Attack","leech seed","../attacks/") + " or poison damage, that damage will be calculated with the formula for" +
+			generateLink("AttackIndex","tpxic","../attacks/") + " successfully uses Rest, it will be cured of poison, but " +
+			generateLink("AttackIndex","toxic","../attacks/") + "'s counter is not reset; if it then suffers burn, " +
+			generateLink("AttackIndex","leech seed","../attacks/") + " or poison damage, that damage will be calculated with the formula for" +
 			" bad poison, still being calculated as N * x, and the N value will still increase by 1 each time (however, if the Pokémon is" +
-			" poisoned with " + generateLink("Attack","toxic","../attacks/") + " again, the N value will be reset to 1). Rest will also"+
+			" poisoned with " + generateLink("AttackIndex","toxic","../attacks/") + " again, the N value will be reset to 1). Rest will also"+
 			" fail if the difference between the user's maximum HP and current HP leaves a remainder of 255 when divided by 256 (such" +
 			" as 255 or 511)."),
 		107 : new C_Move("roar",255/256,0,20,"normal",[],
@@ -561,7 +561,7 @@ class C_Attack_List {
 		109 : new C_Move("rock throw",165/256,50,15,"rock",[],"Rock Throw does damage."),
 		110 : new C_Move("rolling kick",216/256,60,15,"fighting",[],
 			"Rolling Kick does damage and has a 33% chance of causing the target to flinch. Rolling Kick cannot make" +
-			" a target with a " + generateLink("Attack","substitute","../attacks/") + " flinch."),
+			" a target with a " + generateLink("AttackIndex","substitute","../attacks/") + " flinch."),
 		111 : new C_Move("sand attack",255/256,0,15,"normal",[16,17,18,27,28,50,51,83,133,134,135,136],
 			"Sand Attack decreases the target's accuracy stat by one stage."),
 		112 : new C_Move("scratch",255/256,40,35,"normal",[4],"Scratch does damage."),
@@ -574,22 +574,22 @@ class C_Attack_List {
 			"Self-Destruct does damage and causes the user to faint. Though its power is listed as 130, the target's Defense" +
 			" will be halved during damage calculation (unless it is at a value of 1), effectively doubling the power to 260. The" +
 			" user of Self-Destruct will faint even if the attack misses or the opponent is immune to it (due to being Ghost type)." +
-			" If Self-Destruct breaks a target's " + generateLink("Attack","substitute","../attacks/") + ", the user will not faint," +
+			" If Self-Destruct breaks a target's " + generateLink("AttackIndex","substitute","../attacks/") + ", the user will not faint," +
 			" though its image will be replaced by a blank image. Additionally, if the user of Self-Destruct had a " +
-			generateLink("Attack","substitute","../attacks/") + " at the time of such a situation, uses " +
-			generateLink("Attack","substitute","../attacks/") + " later, or switches out, its regular image will once again become" +
+			generateLink("AttackIndex","substitute","../attacks/") + " at the time of such a situation, uses " +
+			generateLink("AttackIndex","substitute","../attacks/") + " later, or switches out, its regular image will once again become" +
 			" visible. If the user of Self-Destruct attacks first and faints itself, the opponent will not attack or be subjected to" +
 			" recurrent damage during that round."),
 		116 : new C_Move("sharpen",255/256,0,30,"normal",[137],"Sharpen increases the user's Attack stat by one stage."),
 		117 : new C_Move("sing",140/256,0,15,"normal",[35,39],
-			"Sing puts the target to sleep and can affect a target behind " + generateLink("Attack","substitute","../attacks/") + "."),
+			"Sing puts the target to sleep and can affect a target behind " + generateLink("AttackIndex","substitute","../attacks/") + "."),
 		118 : new C_Move("skull bash",255/256,100,15,"normal",[7],
 			"Skull Bash does nothing on the turn it is selected, other than say that the user lowered its head. On the following turn," +
 			" Skull Bash will do damage, PP will be deducted from it, and it will count as the last move used. Once Skull Bash is selected," +
 			" the user won't be able to switch out until it is disrupted or fully executed. If Skull Bash is not fully executed, PP will" +
 			" not be deducted from it, and it will not count as the last move used. If the opponent uses " +
-			generateLink("Attack","mirror move","../attacks/") + " during the turn that the user lowers its head, " +
-			generateLink("Attack","mirror move","../attacks/") + " will copy the move that the user executed immediately before using Skull" +
+			generateLink("AttackIndex","mirror move","../attacks/") + " during the turn that the user lowers its head, " +
+			generateLink("AttackIndex","mirror move","../attacks/") + " will copy the move that the user executed immediately before using Skull" +
 			" Bash (or fail if it can't). Sleep, freeze, partial trapping, and flinching will pause but not disrupt the duration of Skull Bash."),
 		119 : new C_Move("sky attack",229/256,140,5,"flying",[142,144,146],
 			"Sky Attack does damage and has a 33% chance of causing the target to flinch."),
@@ -598,7 +598,7 @@ class C_Attack_List {
 			"Slash does damage and has an increased critical hit ratio (x8)."),
 		122 : new C_Move("sleep powder",204/256,0,15,"grass",[1,2,3,12,43,44,45,48,49,69,70,102,103,114],
 			"Sleep Powder puts the target to sleep. Sleep Powder can affect a target behind a " +
-			generateLink("Attack","substitute","../attacks/") + "."),
+			generateLink("AttackIndex","substitute","../attacks/") + "."),
 		123 : new C_Move("sludge",255/256,65,20,"poison",[88,89,109,110],"Sludge does damage and has a 40% chance of poisoning the target."),
 		124 : new C_Move("smog",178/256,20,20,"poison",[],"Smog does damage and has a 40% chance of poisoning the target."),
 		125 : new C_Move("smokescreen",255/256,0,20,"normal",[109,116,117],"Smokescreen lowers the target's accuracy stat by one stage."),
@@ -613,12 +613,12 @@ class C_Attack_List {
 			"Spike Cannon does damage, hitting the target 2-5 times per use. There is a 37.5% chance that it will hit 2 times," +
 			" a 37.5% chance that it will hit 3 times, a 12.5% chance that it will hit 4 times, and a 12.5% chance that it will" +
 			" hit 5 times. Although only the first strike can be a critical hit, each successive one will deal the same amount of" +
-			" damage. Spike Cannon will end immediately if it breaks a " + generateLink("Attack","substitute","../attacks/") + ". " +
-			generateLink("Attack","bide","../attacks/") + " and " + generateLink("Attack","counter","../attacks/") + " will only" +
+			" damage. Spike Cannon will end immediately if it breaks a " + generateLink("AttackIndex","substitute","../attacks/") + ". " +
+			generateLink("AttackIndex","bide","../attacks/") + " and " + generateLink("AttackIndex","counter","../attacks/") + " will only" +
 			" acknowledge the last strike of this move."),
 		130 : new C_Move("splash",255/256,0,40,"normal",[129],"Splash has no effect."),
 		131 : new C_Move("spore",255/256,0,15,"grass",[46,47],
-			"Spore puts the target to sleep. Spore can affect a target behind a " + generateLink("Attack","substitute","../attacks/") + "."),
+			"Spore puts the target to sleep. Spore can affect a target behind a " + generateLink("AttackIndex","substitute","../attacks/") + "."),
 		132 : new C_Move("stomp",255/256,65,20,"normal",[77],
 			"Stomp does damage and has a 33% chance of causing the target to flinch."),
 		133 : new C_Move("strength",255/256,80,15,"normal",[],"Strength does damage."),
@@ -629,20 +629,20 @@ class C_Attack_List {
 			" will automatically be used by a Pokémon that has no usable moves but is ordered to attack. Struggle is capable of" +
 			" striking a critical hit. Struggle has 10 base PP, though no PP would ever be deducted from it. Struggle has an accuracy" +
 			" of 100%. If the user of Struggle attacks first and knocks itself out due to recoil damage, the opponent will not attack" +
-			" or be subjected to recurrent damage during that round. If Struggle breaks a " + generateLink("Attack","substitute","../attacks/") +
+			" or be subjected to recurrent damage during that round. If Struggle breaks a " + generateLink("AttackIndex","substitute","../attacks/") +
 			", the user will take no recoil damage. Self-inflicted recoil damage from Struggle from the previous turn can be countered" +
 			" if the opponent did not make a move on the following turn. Struggle deals Normal-type damage, meaning it is not very" +
 			" effective against Rock-type Pokémon and ineffective against Ghost-type Pokémon. If the only usable move is disabled by " +
-			generateLink("Attack","disable","../attacks/") + ", the affected Pokémon will use Struggle."),
+			generateLink("AttackIndex","disable","../attacks/") + ", the affected Pokémon will use Struggle."),
 		136 : new C_Move("stun spore",204/256,0,30,"grass",[12,43,44,45,46,47,48,49,69,70,71,102,103,114],
-			"Stun Spore paralyzes the target. Stun Spore can affect a target behind a " + generateLink("Attack","substitute","../attacks/") + "."),
+			"Stun Spore paralyzes the target. Stun Spore can affect a target behind a " + generateLink("AttackIndex","substitute","../attacks/") + "."),
 		137 : new C_Move("submission",204/256,80,25,"fighting",[56,57,61,66,67,68,107],
 			"Submission does damage, and the user receives recoil damage equal to 25% of the damage done to the target." +
 			" If the user of Submission attacks first and faints due to recoil damage, the target will not attack or be" +
 			" subjected to recurrent damage during that round. However, the user will still be subject to recurrent damage" +
 			" even if the target faints. Self-inflicted recoil damage from Submission from the previous turn can be countered" +
 			" if the target does not make a move on the following turn. If Submission breaks a " +
-			generateLink("Attack","substitute","../attacks/") + ", the user will take no recoil damage."),
+			generateLink("AttackIndex","substitute","../attacks/") + ", the user will take no recoil damage."),
 		138 : new C_Move("substitute",255/256,0,10,"normal",[83,123],
 			"By decreasing its HP by 25% (rounded down) of its maximum HP, the user creates a substitute with 1 HP more than the amount of HP" +
 			" lost by the user. If the user's current HP is less than 25% (rounded down) of its maximum HP, Substitute fails. If the user's" +
@@ -654,23 +654,23 @@ class C_Attack_List {
 			" Due to a glitch, if a Pokémon behind a substitute takes self-inflicted confusion damage, the damage is applied to the opponent's" +
 			" substitute instead. If the opponent does not have a substitute, no Pokémon or substitute takes damage. While behind a substitute," +
 			" its opponent's moves cannot lower its stat stages, poison it, freeze it, burn it, or cause it to flinch. A Pokémon behind a" +
-			" substitute can be inflicted with paralysis or sleep by status moves (such as " + generateLink("Attack","thunder wave","../attacks/") +
-			" and " + generateLink("Attack","hypnosis","../attacks/") + "), but not by damaging moves (such as "
-			+ generateLink("Attack","thunderbolt","../attacks/") + "). Conversely, a Pokémon behind a substitute cannot be confused by status moves" +
-			" (such as " + generateLink("Attack","confuse ray","../attacks/") + "), but can be confused by damaging moves (such as "
-			+ generateLink("Attack","confusion","../attacks/") + ") as long as they do not break the substitute. Even if a move breaks a" +
+			" substitute can be inflicted with paralysis or sleep by status moves (such as " + generateLink("AttackIndex","thunder wave","../attacks/") +
+			" and " + generateLink("AttackIndex","hypnosis","../attacks/") + "), but not by damaging moves (such as "
+			+ generateLink("AttackIndex","thunderbolt","../attacks/") + "). Conversely, a Pokémon behind a substitute cannot be confused by status moves" +
+			" (such as " + generateLink("AttackIndex","confuse ray","../attacks/") + "), but can be confused by damaging moves (such as "
+			+ generateLink("AttackIndex","confusion","../attacks/") + ") as long as they do not break the substitute. Even if a move breaks a" +
 			" substitute, it cannot inflict any effects it would not be able to inflict to a Pokémon behind a substitute. Additionally," +
-			" Substitute does not affect the opponent's " + generateLink("Attack","disable","../attacks/") + ", " +
-			generateLink("Attack","leech seed","../attacks/") + ", " + generateLink("Attack","super fang","../attacks/") + ", " +
-			generateLink("Attack","transform","../attacks/") + ", or binding moves; the user's " +
-			generateLink("Attack","bide","../attacks/") + ", " + generateLink("Attack","counter","../attacks/") + ", or " +
-			generateLink("Attack","rage","../attacks/") + "; nor either Pokémon's " + generateLink("Attack","haze","../attacks/") + "."+
+			" Substitute does not affect the opponent's " + generateLink("AttackIndex","disable","../attacks/") + ", " +
+			generateLink("AttackIndex","leech seed","../attacks/") + ", " + generateLink("AttackIndex","super fang","../attacks/") + ", " +
+			generateLink("AttackIndex","transform","../attacks/") + ", or binding moves; the user's " +
+			generateLink("AttackIndex","bide","../attacks/") + ", " + generateLink("AttackIndex","counter","../attacks/") + ", or " +
+			generateLink("AttackIndex","rage","../attacks/") + "; nor either Pokémon's " + generateLink("AttackIndex","haze","../attacks/") + "."+
 			" Draining moves can hit and drain HP, but will not drain any HP if they break the substitute. If a Pokémon breaks a substitute" +
-			" with " + generateLink("Attack","hyper beam","../attacks/") + ", it will not need to recharge. If a Pokémon breaks a substitute" +
-			" with " + generateLink("Attack","explosion","../attacks/") + " or " + generateLink("Attack","self-destruct","../attacks/") + ","+
+			" with " + generateLink("AttackIndex","hyper beam","../attacks/") + ", it will not need to recharge. If a Pokémon breaks a substitute" +
+			" with " + generateLink("AttackIndex","explosion","../attacks/") + " or " + generateLink("AttackIndex","self-destruct","../attacks/") + ","+
 			" it will not faint, although its sprite will still disappear until it switches out (or uses Substitute). If a Pokémon breaks" +
 			" a substitute with a recoil move, it will not take any recoil damage. If a Pokémon breaks a substitute with " +
-			generateLink("Attack","pay day","../attacks/") + ", that use of " + generateLink("Attack","pay day","../attacks/") + " will" +
+			generateLink("AttackIndex","pay day","../attacks/") + ", that use of " + generateLink("AttackIndex","pay day","../attacks/") + " will" +
 			" not count toward the money its Trainer picks up at the end of the battle. If a Pokémon attacks a substitute with a" +
 			" multi-strike move, the hits will automatically end if the substitute breaks."),
 		139 : new C_Move("super fang",229/256,1,10,"normal",[19,20],
@@ -678,11 +678,11 @@ class C_Attack_List {
 			" hit Ghost-type Pokémon, even though the type has immunity to Normal-type moves."),
 		140 : new C_Move("supersonic",140/256,0,20,"normal",[72,90,118],
 			"Supersonic causes the target to become confused. Supersonic will fail if the target has a " +
-			generateLink("Attack","substitute","../attacks/") + " or is already confused."),
+			generateLink("AttackIndex","substitute","../attacks/") + " or is already confused."),
 		141 : new C_Move("surf",255/256,95,15,"water",[26,73,80,131],"Surf does damage."),
 		142 : new C_Move("swift",256/256,60,20,"normal",[16,58],
 			"Swift does damage and bypasses accuracy checks. It can hit a Pokémon even during the semi-invulnerable turn of a move such as " +
-			generateLink("Attack","dig","../attacks/") + "."),
+			generateLink("AttackIndex","dig","../attacks/") + "."),
 		143 : new C_Move("swords dance",255/256,0,30,"normal",[],
 			"Swords Dance increases the user's Attack stat by two stages."),
 		144 : new C_Move("tackle",242/256,35,35,"normal",[1,7,10,11,129],"Tackle does damage."),
@@ -693,7 +693,7 @@ class C_Attack_List {
 			" If the user of Take Down attacks first and faints due to recoil damage, the opponent will not attack or be subjected" +
 			" to recurrent damage during that round. Self-inflicted recoil damage from Take Down from the previous turn can" +
 			" be countered if the opponent does not make a move on the following turn. If Take Down breaks a " + 
-			generateLink("Attack","substitute","../attacks/") + ", the user will take no recoil damage."),
+			generateLink("AttackIndex","substitute","../attacks/") + ", the user will take no recoil damage."),
 		147 : new C_Move("teleport",255/256,0,20,"psychic",[],
 			"If Teleport is successfully used in a wild Pokémon battle the user flees and the battle automatically ends." +
 			" In a Trainer battle, Teleport always fails. Teleport has normal priority. If the user's level is less than" +
@@ -716,18 +716,18 @@ class C_Attack_List {
 		152 : new C_Move("thunder wave",255/256,0,20,"electric",[25,26,36,40,64,65,80,81,82,96,97,100,101,113,120,121,122,125,135,137,145,
 				147,148,149,150,151],
 				"Thunder Wave paralyzes the target. Thander Wave takes types into consideration, so it cannot affect Ground-type Pokemon." +
-				" Thunder Wave can affect a target behind a " + generateLink("Attack","substitute","../attacks/") + "."),
-		153 : new C_Move("thunderbolt",255/256,95,15,"electric",[25,26,31,34,81,82,100,101,110,113121,122,125,126,130,131,135,137,145],
+				" Thunder Wave can affect a target behind a " + generateLink("AttackIndex","substitute","../attacks/") + "."),
+		153 : new C_Move("thunderbolt",255/256,95,15,"electric",[25,26,31,34,81,82,100,101,110,113,121,122,125,126,130,131,135,137,145],
 			"Thunderbolt does damage."),
-		154 : new C_Move("toxic",216/256,0,10,"poison",[1,29,30,32,33,41,43,46,48,69,72,88,8996,109,110,116,117],
+		154 : new C_Move("toxic",216/256,0,10,"poison",[1,29,30,32,33,41,43,46,48,69,72,88,89,96,109,110,116,117],
 			"Toxic badly poisons the target. When the target takes damage from the poison, the damage done will be N * x," +
 			" where N starts at 1 and x is 1/16 of the target's maximum HP (rounded down, but not less than 1). While a" +
 			" Pokémon is badly poisoned, N increases by 1 each time it takes either Toxic or " +
-			generateLink("Attack","leech seed","../attacks/") + " damage (meaning it may increase twice per turn if a Pokémon" +
-			" is affected by both). When an afflicted Pokémon is affected by " + generateLink("Attack","haze","../attacks/") +
+			generateLink("AttackIndex","leech seed","../attacks/") + " damage (meaning it may increase twice per turn if a Pokémon" +
+			" is affected by both). When an afflicted Pokémon is affected by " + generateLink("AttackIndex","haze","../attacks/") +
 			", switches out, or when the battle ends, the Pokémon's poison status becomes regular poison. If a badly poisoned" +
-			" Pokémon successfully uses " + generateLink("Attack","rest","../attacks/") + ", it will be cured of poison, but N" +
-			" is not reset; if it then suffers burn, " + generateLink("Attack","leech seed","../attacks/") + " or poison damage," +
+			" Pokémon successfully uses " + generateLink("AttackIndex","rest","../attacks/") + ", it will be cured of poison, but N" +
+			" is not reset; if it then suffers burn, " + generateLink("AttackIndex","leech seed","../attacks/") + " or poison damage," +
 			" that damage will still be calculated as N * x, and the N value will still increase by 1 each time (however," +
 			" if the Pokémon is poisoned with Toxic, the N value will be reset to 1). Toxic cannot affect Poison-type Pokémon."),
 		155 : new C_Move("transform",256/256,0,10,"normal",[132],
@@ -744,7 +744,7 @@ class C_Attack_List {
 			" Pokémon's base Speed, not the base Speed of the Pokémon it transformed into. PP-restoring items such as " +
 			generateLink("Item","ether","../items/") + " used from the Bag can only restore PP to moves the Pokémon knows" +
 			" before transforming. Transform bypasses accuracy checks to always hit, even if the target is in the" +
-			" semi-invulnerable turn of a move such as " + generateLink("Attack","dig","../attacks/") + ". The level up" +
+			" semi-invulnerable turn of a move such as " + generateLink("AttackIndex","dig","../attacks/") + ". The level up" +
 			" moveset glitch causes a Transformed Pokémon to use its original moveset (unaffected by Transform) if it" +
 			" it levels up and learns a new move during a battle."),
 		156 : new C_Move("tri attack",255/256,80,10,"normal",[84,137],"Tri Attack does damage."),
@@ -752,8 +752,8 @@ class C_Attack_List {
 			"Twineedle does damage, hitting the target twice per use. The second strike has a 20% chance of poisoning the" +
 			" target, unless the target is Poison-type. Although only the first strike can be a critical hit, the second one will" +
 			" deal the same amount of damage. Twineedle will end immediately if the first strike breaks a " +
-			generateLink("Attack","substitute","../attacks/") + ". " + generateLink("Attack","bide","../attacks/") + " and " +
-			generateLink("Attack","counter","../attacks/") + " will only acknowledge the second strike of this move."),
+			generateLink("AttackIndex","substitute","../attacks/") + ". " + generateLink("AttackIndex","bide","../attacks/") + " and " +
+			generateLink("AttackIndex","counter","../attacks/") + " will only acknowledge the second strike of this move."),
 		158 : new C_Move("vine whip",255/256,35,10,"grass",[1],"Vine Whip does damage."),
 		159 : new C_Move("vice grip",255/256,55,30,"normal",[98],"Vice Grip does damage."),
 		160 : new C_Move("water gun",255/256,40,25,"water",[7,120],"Water Gun does damage."),
@@ -781,12 +781,12 @@ class C_Attack_List {
 			" be used against the incoming Pokémon, deducting an additional PP from the move. If at such a time Wrap" +
 			" has 0 PP, Wrap will still be used against the incoming Pokémon. After that use, the current PP of Wrap" +
 			" will roll over to 63, and full PP Ups will be applied to it. Even if Wrap misses, it will negate the" +
-			" recharge turn normally required for " + generateLink("Attack","hyper beam","../attacks/") + ". Additionally," +
-			" if the user of Wrap attacks before the user of " + generateLink("Attack","hyper beam","../attacks/") +
-			" during a recharge turn and the use of Wrap misses, the user of" + generateLink("Attack","hyper beam","../attacks/") +
-			" will automatically use " + generateLink("Attack","hyper beam","../attacks/") + " during that turn." +
-			" If at such a time " + generateLink("Attack","hyper beam","../attacks/") + " has 0 PP, " +
-			generateLink("Attack","hyper beam","../attacks/") + " will still be used, and afterwards its current PP will" +
+			" recharge turn normally required for " + generateLink("AttackIndex","hyper beam","../attacks/") + ". Additionally," +
+			" if the user of Wrap attacks before the user of " + generateLink("AttackIndex","hyper beam","../attacks/") +
+			" during a recharge turn and the use of Wrap misses, the user of" + generateLink("AttackIndex","hyper beam","../attacks/") +
+			" will automatically use " + generateLink("AttackIndex","hyper beam","../attacks/") + " during that turn." +
+			" If at such a time " + generateLink("AttackIndex","hyper beam","../attacks/") + " has 0 PP, " +
+			generateLink("AttackIndex","hyper beam","../attacks/") + " will still be used, and afterwards its current PP will" +
 			" roll over to 63, and full PP ups will be applied to it. The target will get to select a move during each" +
 			" turn of Wrap's duration, and will attack the player's incoming Pokémon with the selected move if the" +
 			" player decides to switch before the duration is over. Although Wrap cannot damage Ghost-type Pokémon," +

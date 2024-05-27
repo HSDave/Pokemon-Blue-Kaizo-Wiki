@@ -32,7 +32,7 @@ function generateType(pokemon) {
 }		
 
 function generateAttack(attack, path = '') {
-	var attackEntry = '<td>' + generateLink("Attack", titleCase(attack,[' ','-']), path) + '</td> ';
+	var attackEntry = '<td>' + generateLink("AttackIndex", titleCase(attack,[' ','-']), path) + '</td> ';
 	attackEntry    += generateTypeEntry(C_Attack_List.getAttack(attack).m_type);
 	return attackEntry;
 }
@@ -41,8 +41,8 @@ function generateHeader(path = '') {
 	var header = '<div class="top">';
 	header += '<button class="header" onclick="window.location.href = &quot;' + path + 'Index.html&quot;;" title="home">Home</button> ';
 	header += '<button class="header" onclick="window.location.href = &quot;' + path + 'pokemon/PokemonIndex.html&quot;;" title="Pokemon List">Pokemon List</button> ';
-	header += '<button class="header" onclick="window.location.href = &quot;' + path + 'attacks/attackIndex.html&quot;;" title="Attack List">Attack List</button> ';
-	header += '<button class="header" onclick="window.location.href = &quot;' + path + 'items/Item List.html&quot;;" title="Item List">Item List</button> ';
+	header += '<button class="header" onclick="window.location.href = &quot;' + path + 'attacks/AttackIndex.html&quot;;" title="Attack List">Attack List</button> ';
+	header += '<button class="header" onclick="window.location.href = &quot;' + path + 'items/ItemList.html&quot;;" title="Item List">Item List</button> ';
 	header += '<button class="header" onclick="window.location.href = &quot;' + path + 'walkthrough/Walkthrough.html&quot;;" title="Walkthrough">Walkthrough</button> ';
 	header += '</div>';
 	header += '<hr></hr>';
@@ -186,4 +186,48 @@ function generateEncounterTable(pokemon) {
 	}
 	table +=	'</table>';
 	return fn + table;
+}
+
+function generateAttackListEntry(attack) {
+	var entry = '<tr id="' + titleCase(attack.m_name,[' ','-']) + '">';
+	entry +=	'<td>' + titleCase(attack.m_name,[' ','-']) + '</td>';
+	entry +=	'<td class="number">' + (attack.m_accuracy*100.0).toFixed(2).toString() + ' %</td>';
+	entry +=	'<td class="number">' + attack.m_strength.toString() + '</td>';
+	entry +=	'<td class="number">' + attack.m_pp.toString() + '</td>';
+	entry += generateTypeEntry(attack.m_type);
+	entry +=	'<td>' + attack.m_description + '</td><td>';
+	for (var i in attack.m_pokemonreference) {
+		var idx = attack.m_pokemonreference[i];
+		var pokemon = C_Pokemon_List.m_Pokemon_List[idx.toString()];
+		var name = pokemon.m_name;
+		if (idx < 1 || idx > 151) {
+			console.log(attack.m_name);
+		}
+		entry += generateLink("Pokemon",C_Pokemon_List.m_Pokemon_List[idx].m_name,'../pokemon/') + ', ';
+	}
+	// remove last ', '
+	if(attack.m_pokemonreference.length > 0) {
+		entry = entry.slice(0, entry.length - 2);
+	}
+	entry += '</td></tr>';
+	return entry;
+}
+
+function generateAttackList() {
+	var table = '<table class="pkmntbl">';
+	table +=	'<caption>Attack List</caption>';
+	table +=	'<tr>';
+	table +=		'<th>Name</th>';
+	table +=		'<th>Accuracy</th>';
+	table +=		'<th>Strength</th>';
+	table +=		'<th>PP</th>';
+	table +=		'<th>Type</th>';
+	table +=		'<th>Description</th>';
+	table +=		'<th>Learned by lvl up</th>';
+	table +=	'</tr>';
+	for (var i in C_Attack_List.m_Attack_List) {
+		table += generateAttackListEntry(C_Attack_List.m_Attack_List[i]);
+	}
+	table += '</table>';
+	return table;
 }
