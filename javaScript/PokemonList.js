@@ -368,7 +368,7 @@ class C_Attack_List {
 			" only, if the user of Jump Kick attacks first and faints itself due to crash damage," +
 			" the opponent will not attack or be subjected to recurrent damage during that round."),
 		61 : new C_Move("horn attack",255/256,65,25,"normal",[32,33,138],"Horn Attack does damage."),
-		70 : new C_Move("karate chop",255/256,50,25,"fighting",[56,66,67],
+		70 : new C_Move("karate chop",255/256,50,25,"normal",[56,66,67],
 			"Karate Chop has a higher critical hit ratio (x8)."),
 		71 : new C_Move("kinesis",204/256,0,15,"psychic",[63,64],"Kinesis decreases the target's accuracy stat by one stage."),
 		72 : new C_Move("leech life",255/256,20,15,"bug",[46],
