@@ -31,7 +31,7 @@ function generateButton(value, content, path = '', btnclass = "pokemon", type = 
 }
 
 function generateLink(type, value, path = '', content = value) {
-	value = titleCase(value);
+	value = titleCase(value,[' ','-']);
 	var mylink = '<a href="' + path + type + '.html?' + value + '" ';
 	mylink	  += 'title="' + value + '">' + titleCase(content,[' ','-']) + '</a>';
 	return mylink;

@@ -373,7 +373,7 @@ class C_Attack_List {
 		71 : new C_Move("kinesis",204/256,0,15,"psychic",[63,64],"Kinesis decreases the target's accuracy stat by one stage."),
 		72 : new C_Move("leech life",255/256,20,15,"bug",[46],
 			"Leech Life does damage, and up to 50% of the damage dealt to the target is restored to the user as HP." +
-			" If this attack does 1 HP of damage, 1 HP will be restored to the user. If Leech Life breaks a" +
+			" If this attack does 1 HP of damage, 1 HP will be restored to the user. If Leech Life breaks a " +
 			generateLink("AttackIndex","substitute","../attacks/") + ", no HP will be restored to the user. If HP is" +
 			" restored to the user when its current HP would be greater than its maximum HP, its current HP will be" +
 			" set equal to its maximum HP."),
@@ -783,7 +783,7 @@ class C_Attack_List {
 			" will roll over to 63, and full PP Ups will be applied to it. Even if Wrap misses, it will negate the" +
 			" recharge turn normally required for " + generateLink("AttackIndex","hyper beam","../attacks/") + ". Additionally," +
 			" if the user of Wrap attacks before the user of " + generateLink("AttackIndex","hyper beam","../attacks/") +
-			" during a recharge turn and the use of Wrap misses, the user of" + generateLink("AttackIndex","hyper beam","../attacks/") +
+			" during a recharge turn and the use of Wrap misses, the user of " + generateLink("AttackIndex","hyper beam","../attacks/") +
 			" will automatically use " + generateLink("AttackIndex","hyper beam","../attacks/") + " during that turn." +
 			" If at such a time " + generateLink("AttackIndex","hyper beam","../attacks/") + " has 0 PP, " +
 			generateLink("AttackIndex","hyper beam","../attacks/") + " will still be used, and afterwards its current PP will" +
